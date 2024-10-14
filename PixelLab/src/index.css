@@ -1,0 +1,54 @@
+:root {
+  --dark: #464646;
+  --light: #e0e0e0;
+
+  --color1: #ef4f44;
+  --color2: #f07167;
+  --color3: #ef9791;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+body {
+  overflow-x: hidden;
+  color: var(--dark);
+  /* background: linear-gradient(white, #1f894f29); */
+  background-color: white;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 50px; */
+  gap: 7vh;
+  /* gap: clamp(50px, 15vw, 100px); */
+  /* gap: clamp(20px, 15vh, 200px); */
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    padding: 30px;
+    gap: 15vh;
+  }
+}

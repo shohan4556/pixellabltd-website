@@ -1,0 +1,87 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import Style from "../assets/styles/nav.module.css";
+import MenuBarIcon from "../assets/imgs/menu-bar.png";
+import CloseIcon from "../assets/imgs/cross.png";
+import Logo from "../assets/imgs/logo.png";
+
+const Navbar = () => {
+  const [isToggled, setIsToggled] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      setShowNav(true);
+    } else {
+      setShowNav(false);
+    }
+  });
+
+  const handleMenuToggle = () => {
+    setIsToggled(!isToggled);
+  };
+
+  return (
+    <div
+      className={`${Style.navContainer} ${
+        showNav ? Style.navContainerShow : ""
+      }`}
+    >
+      <nav className={Style.nav}>
+        <div className={Style.logobar}>
+          {/* <h1 className={Style.logo}>PixelLab</h1> */}
+
+          <a href="#" className={Style.logo}>
+            <img src={Logo} alt="logo" />
+          </a>
+          <div>
+            <button onClick={handleMenuToggle}>
+              <img
+                className={Style.menubarIcon}
+                src={isToggled ? CloseIcon : MenuBarIcon}
+                alt="menuIcons"
+              />
+            </button>
+          </div>
+        </div>
+
+        <ul
+          className={`${Style.navMenu} ${isToggled ? Style.navMenuShow : ""}`}
+        >
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? Style.active : undefined
+              }
+            >
+              HOME
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? Style.active : undefined
+              }
+            >
+              CONTACT
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? Style.active : undefined
+              }
+            >
+              ABOUT
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;

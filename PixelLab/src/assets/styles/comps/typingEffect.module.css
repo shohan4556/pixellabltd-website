@@ -1,0 +1,26 @@
+.typeWriter {
+  color: var(--light);
+  font-family: sans-serif;
+  font-size: 3rem;
+  animation: blink 0.5s step-end infinite alternate;
+  font-weight: bold;
+  /* text-shadow: 2px 2px 2px black; */
+  text-shadow: 2px 2px 0 #1c1c1c, -2px -2px 0 #1c1c1c, -2px 2px 0 #1c1c1c,
+    2px -2px 0 #1c1c1c;
+}
+
+@media screen and (min-width: 768px) {
+  .typeWriter {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .typeWriter {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .typeWriter {
+    font-size: 6rem;
+  }
+}

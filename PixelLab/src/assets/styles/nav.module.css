@@ -1,0 +1,117 @@
+/***** nav *****/ /***** End nav *****/
+.navContainer {
+  /* box-shadow: 0px -5px 10px #00000016 inset; */
+  transition: all 0.4s ease;
+  z-index: 10;
+  border-bottom: 1px solid var(--dark);
+  /* box-shadow: 0 5px 10px gray; */
+}
+.nav {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: white;
+}
+.logobar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo img {
+  width: 40px;
+}
+.navMenu {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+.navMenu li a {
+  padding: 10px 20px;
+  display: block;
+  color: var(--dark);
+}
+
+.navMenu li > a:hover {
+  background: #87878727;
+}
+.navMenuShow {
+  height: 150px;
+  margin-top: 0px;
+}
+.menubarIcon {
+  display: block;
+  font-size: 3rem;
+  height: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .logo img {
+    width: 50px;
+  }
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+    width: 100%;
+    box-shadow: none;
+    top: 0;
+  }
+  .navContainerShow {
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: white;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+  }
+  .logobar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    color: var(--dark);
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    height: auto;
+    padding: 0 30px;
+    width: 30%;
+  }
+  .navMenuShow {
+    margin: 0;
+  }
+  .navMenu li {
+    padding: 0;
+  }
+  .navMenu li a {
+    padding: 0;
+    display: block;
+    border: none;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .navMenu li > a:hover {
+    background: none;
+    color: gray;
+  }
+  .navMenu li a.active {
+    color: crimson;
+  }
+
+  .menubarIcon {
+    display: none;
+  }
+}
+
+/***** Section *****/ /***** End Section *****/
