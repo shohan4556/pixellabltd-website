@@ -5,12 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import TypingEffect from "../comps/TypingEffect";
-import BotImg from "../assets/imgs/Bot.png";
-import Game1 from "../assets/imgs/game.jpg";
+
 import Bg from "../assets/imgs/bg.png";
 import Bg2 from "../assets/imgs/bg2.png";
 import Bg3 from "../assets/imgs/bg3.png";
 import Bg4 from "../assets/imgs/team.jpeg";
+import Cards from "../assets/imgs/cards.png";
+import Hazari from "../assets/imgs/hazari.jpg";
+import Solitaire from "../assets/imgs/solitaire.png";
+import SholoGuti from "../assets/imgs/16Guti.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAndroid,
@@ -74,10 +78,10 @@ const Home = () => {
 
         <Slider {...settings} className={Style.slider}>
           <div className={Style.slide}>
-            <img src={Bg2} alt="" />
+            <img src={Bg} alt="" />
           </div>
           <div className={Style.slide}>
-            <img src={Bg} alt="" />
+            <img src={Bg2} alt="" />
           </div>
           <div className={Style.slide}>
             <img src={Bg3} alt="" />
@@ -127,17 +131,22 @@ const Home = () => {
           <Slider {...gameSliderSettings} className={Style.gameSlider}>
             <div className={Style.slide}>
               <a href="#">
-                <img src={Bg} alt="" />
+                <img src={Cards} alt="" />
               </a>
             </div>
             <div className={Style.slide}>
               <a href="#">
-                <img src={Bg2} alt="" />
+                <img src={Solitaire} alt="" />
               </a>
             </div>
             <div className={Style.slide}>
               <a href="#">
-                <img src={Bg3} alt="" />
+                <img src={Hazari} alt="" />
+              </a>
+            </div>
+            <div className={Style.slide}>
+              <a href="#">
+                <img src={SholoGuti} alt="" />
               </a>
             </div>
           </Slider>

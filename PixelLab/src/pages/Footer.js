@@ -2,12 +2,7 @@ import React from "react";
 import Style from "../assets/styles/footer.module.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -20,19 +15,19 @@ const Footer = () => {
             business, cooperation, advertising, …
           </p>
           <div>
-            <a className={Style.mail} href="mailto:sales@inlogic.sk">
-              sales@inlogic.sk
+            <a className={Style.mail} href="mailto:shohan@pixellabltd.com">
+              shohan@pixellabltd.com
             </a>
             <br />
             <a className={Style.tel} href="tel:+0123456789">
-              +0123456789
+              +8801831145451
             </a>
           </div>
         </div>
         <div className={Style.line}></div>
         <div className={Style.right}>
           <p>
-            We are hiring IT and <br /> gaming professionals from Slovakia
+            We are hiring IT and <br /> gaming professionals from Asia.
           </p>
           <div>
             <h2 className={Style.mail}>We are hiring</h2>
@@ -45,24 +40,20 @@ const Footer = () => {
 
       <div className={Style.sec2}>
         <div>
-          {/* <a href="">
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-          <a href="">
-            {" "}
-            <FontAwesomeIcon icon={faXTwitter} />
-          </a>
-          <a href="">
-            {" "}
-            <FontAwesomeIcon icon={faInstagram} />
-          </a> */}
-          <a href="">
+          <a
+            href="https://www.linkedin.com/company/pixellab-ltd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </div>
         <div>
           <p>2024. All rights reserved.</p>
-          <a href="#">PRIVACY POLICY</a> <br />
+          {/* <a href="#">PRIVACY POLICY</a> <br /> */}
+          {/* <NavLink to="/privacyPolicy">PRIVACY POLICY</NavLink> */}
+          <a href="/privacyPolicy">PRIVACY POLICY</a>
+          <br />
           <a href="#">COOKIES</a>
           <p>Created with passion.</p>
         </div>

@@ -149,8 +149,13 @@
   margin-bottom: 30px;
   font-size: 3rem;
 }
-
-/* Custom Next Button */
+.gameSlider {
+  display: flex;
+  gap: 20px;
+}
+.gameSlider .slide {
+  padding: 10px;
+}
 .next {
   position: absolute;
   right: 10px;
@@ -164,7 +169,6 @@
   cursor: pointer;
 }
 
-/* Custom Prev Button */
 .prev {
   position: absolute;
   left: 10px;
@@ -177,11 +181,10 @@
   padding: 10px;
   cursor: pointer;
 }
-
-/* Image Styling */
 .gameSlider img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 /***** End Section 4 *****/
