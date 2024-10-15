@@ -28,16 +28,19 @@
   transition: 0.4s ease;
 }
 .navMenu li a {
-  padding: 10px 20px;
+  padding: 20px 20px;
   display: block;
   color: var(--dark);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .navMenu li > a:hover {
   background: #87878727;
 }
 .navMenuShow {
-  height: 150px;
+  height: 250px;
   margin-top: 0px;
 }
 .menubarIcon {

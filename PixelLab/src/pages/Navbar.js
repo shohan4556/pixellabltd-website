@@ -36,11 +36,6 @@ const Navbar = () => {
           </a>
           <div>
             <button onClick={handleMenuToggle}>
-              {/* <img
-                className={Style.menubarIcon}
-                src={isToggled ? CloseIcon : MenuBarIcon}
-                alt="menuIcons"
-              /> */}
               <FontAwesomeIcon
                 className={Style.menubarIcon}
                 icon={isToggled ? faTimes : faStream}
