@@ -33,6 +33,7 @@
   gap: 50px;
   margin-top: 50px;
 }
+
 .sec1 .left div,
 .right div {
   margin-top: 20px;
@@ -95,11 +96,23 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+  }
   .sec1 .line {
     width: 1px;
     height: 300px;
   }
   .sec1 .mail {
     font-size: 2rem;
+  }
+  .sec2 div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }

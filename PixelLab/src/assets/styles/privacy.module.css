@@ -1,0 +1,27 @@
+.privacyContainer {
+  /* text-align: justify; */
+  line-height: 2rem;
+}
+.privacyContainer h2,
+.privacyContainer h1 {
+  margin: clamp(30px, 5vh, 40px) 0;
+  font-weight: 500;
+}
+.privacyContainer ul {
+  padding-left: clamp(30px, 3vw, 50px);
+}
+.privacyContainer p,
+.privacyContainer li {
+  color: var(--font1);
+}
+.privacyContainer a {
+  color: #0298f5;
+}
+.privacyContainer a:hover {
+  /* color: #024ff5; */
+  border-bottom: 1.5px solid #0298f5;
+}
+.privacyContainer p strong {
+  color: var(--dark);
+  /* color: black; */
+}

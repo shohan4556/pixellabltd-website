@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Style from "../assets/styles/comps/goTop.module.css";
-// import GoUp from "../assets/imgs/arrowUp.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const GoTop = () => {
   const [btnShow, setBtnShow] = useState(false);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 300) {
       setBtnShow(true);
     } else {
       setBtnShow(false);
@@ -26,7 +27,7 @@ const GoTop = () => {
         onClick={handleGoTop}
         className={`${Style.goTopBtn} ${btnShow ? Style.goTopBtnShow : ""}`}
       >
-        ⇪
+        <FontAwesomeIcon icon={faChevronUp} />
       </button>
       {/* className={`${Style.navMenu} ${isToggled ? Style.navMenuShow : ""}`} */}
     </div>

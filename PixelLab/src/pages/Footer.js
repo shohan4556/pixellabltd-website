@@ -16,12 +16,10 @@ const Footer = () => {
           </p>
           <div>
             <a className={Style.mail} href="mailto:shohan@pixellabltd.com">
-              shohan@pixellabltd.com
+              support@pixellabltd.com
             </a>
             <br />
-            <a className={Style.tel} href="tel:+0123456789">
-              +8801831145451
-            </a>
+            <p style={{ color: "white" }}>Email now</p>
           </div>
         </div>
         <div className={Style.line}></div>
@@ -31,7 +29,7 @@ const Footer = () => {
           </p>
           <div>
             <h2 className={Style.mail}>We are hiring</h2>
-            <a className={Style.tel} href="#">
+            <a className={Style.tel} href="/contact">
               Contact
             </a>
           </div>
@@ -58,6 +56,7 @@ const Footer = () => {
           <p>Created with passion.</p>
         </div>
       </div>
+      {/* <small>T_anjid</small> */}
     </footer>
   );
 };

@@ -1,12 +1,14 @@
 :root {
   --dark: #464646;
-  --light: #e0e0e0;
+  --light: #e0e0e0; /*unUsed may be*/
+  --font1: #7b7b7b;
 
-  --color1: #ef4f44;
+  --color1: #ef5b44; /*#ef4f44*/
   --color2: #f07167;
-  --color3: #ef9791;
 }
-
+p {
+  color: var(--font1);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +18,6 @@
 body {
   overflow-x: hidden;
   color: var(--dark);
-  /* background: linear-gradient(white, #1f894f29); */
   background-color: white;
 }
 a {
@@ -38,17 +39,10 @@ main {
   padding: 20px;
   margin: 0 auto;
   max-width: 1600px;
-  display: flex;
-  flex-direction: column;
-  /* gap: 50px; */
-  gap: 7vh;
-  /* gap: clamp(50px, 15vw, 100px); */
-  /* gap: clamp(20px, 15vh, 200px); */
 }
 
 @media screen and (min-width: 992px) {
   main {
     padding: 30px;
-    gap: 15vh;
   }
 }

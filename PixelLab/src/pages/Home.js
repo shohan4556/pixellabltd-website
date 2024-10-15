@@ -40,8 +40,8 @@ const Home = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    nextArrow: <button className="next">Next</button>,
-    prevArrow: <button className="prev">Prev</button>,
+    // nextArrow: <button className="next">Next</button>,
+    // prevArrow: <button className="prev">Prev</button>,
     responsive: [
       {
         breakpoint: 768,
@@ -73,18 +73,20 @@ const Home = () => {
       <section className={Style.sec1}>
         <div className={Style.contentOverlay}>
           <TypingEffect />
-          <button className={Style.btn}>CONTACT</button>
+          <a href="/contact">
+            <button className={Style.btn}>CONTACT</button>
+          </a>
         </div>
 
         <Slider {...settings} className={Style.slider}>
           <div className={Style.slide}>
-            <img src={Bg} alt="" />
+            <img src={Cards} alt="" />
           </div>
           <div className={Style.slide}>
-            <img src={Bg2} alt="" />
+            <img src={SholoGuti} alt="" />
           </div>
           <div className={Style.slide}>
-            <img src={Bg3} alt="" />
+            <img src={Solitaire} alt="" />
           </div>
         </Slider>
       </section>
@@ -92,12 +94,13 @@ const Home = () => {
       <main className={Style.main}>
         <section className={Style.sec2}>
           <h2>
-            Hi.. We are team PixelLab, a dynamic game development company,
-            crafting immersive and innovative games with a passion for
-            creativity and cutting-edge technology. Their talented team delivers
-            exceptional gaming experiences across various platforms.
+            Hello! We are PixelLab, a dynamic game development company
+            specializing in the creation of engaging board and card games. With
+            a passion for creativity and cutting-edge technology, our talented
+            team crafts immersive and innovative gaming experiences tailored to
+            these genres.
           </h2>
-          <a href="#">
+          <a href="/about">
             <p>Read about us</p>
             <p>⇾</p>
           </a>
@@ -118,10 +121,12 @@ const Home = () => {
           <div>
             <h1>Our team has all it takes to create awesome games</h1>
             <p>
-              But we’re always looking for new people to help us <br /> make our
-              games even better
+              Got Some Crazy Idea? <br /> Contact with us
             </p>
-            <button>CONTACT</button>
+
+            <a href="/contact">
+              <button>CONTACT</button>
+            </a>
           </div>
         </section>
 
@@ -130,23 +135,35 @@ const Home = () => {
 
           <Slider {...gameSliderSettings} className={Style.gameSlider}>
             <div className={Style.slide}>
-              <a href="#">
-                <img src={Cards} alt="" />
-              </a>
-            </div>
-            <div className={Style.slide}>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.pixellab.solitaire.classic.klondike&hl=en"
+                target="_blank"
+                rel="noopener & noreferrer"
+              >
                 <img src={Solitaire} alt="" />
               </a>
             </div>
             <div className={Style.slide}>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.pixellab.hazari.card.game&hl=en"
+                target="_blank"
+                rel="noopener & noreferrer"
+              >
                 <img src={Hazari} alt="" />
               </a>
             </div>
             <div className={Style.slide}>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro&hl=en"
+                target="_blank"
+                rel="noopener & noreferrer"
+              >
                 <img src={SholoGuti} alt="" />
+              </a>
+            </div>
+            <div className={Style.slide}>
+              <a href="#">
+                <img src={Cards} alt="" />
               </a>
             </div>
           </Slider>

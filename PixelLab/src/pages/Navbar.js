@@ -4,6 +4,8 @@ import Style from "../assets/styles/nav.module.css";
 import MenuBarIcon from "../assets/imgs/menu-bar.png";
 import CloseIcon from "../assets/imgs/cross.png";
 import Logo from "../assets/imgs/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStream, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -29,17 +31,19 @@ const Navbar = () => {
     >
       <nav className={Style.nav}>
         <div className={Style.logobar}>
-          {/* <h1 className={Style.logo}>PixelLab</h1> */}
-
-          <a href="#" className={Style.logo}>
+          <a href="/" className={Style.logo}>
             <img src={Logo} alt="logo" />
           </a>
           <div>
             <button onClick={handleMenuToggle}>
-              <img
+              {/* <img
                 className={Style.menubarIcon}
                 src={isToggled ? CloseIcon : MenuBarIcon}
                 alt="menuIcons"
+              /> */}
+              <FontAwesomeIcon
+                className={Style.menubarIcon}
+                icon={isToggled ? faTimes : faStream}
               />
             </button>
           </div>

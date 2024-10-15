@@ -1,0 +1,24 @@
+.main {
+  padding: clamp(50px, 10vh, 250px) clamp(20px, 20vh, 30px);
+}
+.main h1 {
+  padding-bottom: 50px;
+}
+.sec1 {
+  background: var(--color1);
+  padding: 150px 0;
+}
+.sec1 h3 {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: white;
+  outline: 1px solid white;
+  outline-offset: 5px;
+  font-size: 1.3rem;
+}
+
+.sec2 h3 {
+  margin: 20px 0;
+  font-weight: 500;
+}
