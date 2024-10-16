@@ -32,9 +32,6 @@ const Contact = () => {
 
   return (
     <div>
-      {/* <section className={Style.sec1}>
-        <h2>CONTACT</h2>
-      </section> */}
       <main className={Style.main}>
         <h1>CONTACT US</h1>
         <section className={Style.sec2}>
@@ -95,7 +92,9 @@ const Contact = () => {
                 placeholder="Tell Something"
               ></textarea>
             </div>
-            <button type="submit">SEND</button>
+            <button type="submit">
+              <a href="mailto:tanjid3656@gmail.com">SEND</a>
+            </button>
           </form>
         </section>
       </main>

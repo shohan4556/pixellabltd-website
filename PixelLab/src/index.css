@@ -3,8 +3,8 @@
   --light: #e0e0e0; /*unUsed may be*/
   --font1: #7b7b7b;
 
-  --color1: #ef5b44; /*#ef4f44*/
-  --color2: #f07167;
+  --color1: #44b0ef; /*#ef4f44*/
+  --color2: #67bbf0;
 }
 p {
   color: var(--font1);

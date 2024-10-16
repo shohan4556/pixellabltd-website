@@ -21,18 +21,16 @@ const Footer = () => {
             <p style={{ color: "white" }}>Email now</p>
           </div>
         </div>
-        {/* <div className={Style.line}></div> */}
-        {/* <div className={Style.right}>
-          <p>
-            We are hiring IT and <br /> gaming professionals from Asia.
-          </p>
+        <div className={Style.line}></div>
+        <div className={Style.right}>
           <div>
-            <h2 className={Style.mail}>We are hiring</h2>
-            <a className={Style.tel} href="/contact">
-              Contact
-            </a>
+            <h2 className={Style.mail}>Our Address</h2>
           </div>
-        </div> */}
+          <p>
+            Plot. 37, Road 11, Block H, Level 3, Ventura Iconia <br />
+            Banani, Dhaka.
+          </p>
+        </div>
       </div>
 
       <div className={Style.sec2}>
@@ -48,9 +46,6 @@ const Footer = () => {
         <div>
           <p>2024. All rights reserved.</p>
           <a href="/privacyPolicy">PRIVACY POLICY</a>
-          <br />
-          <a href="#">COOKIES</a>
-          <p>Created with passion.</p>
         </div>
       </div>
       {/* <small>T_anjid</small> */}

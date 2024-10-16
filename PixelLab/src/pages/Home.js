@@ -73,7 +73,7 @@ const Home = () => {
       <section className={Style.sec1}>
         <div className={Style.contentOverlay}>
           <TypingEffect />
-          <a href="/contact">
+          <a href="mailto:support@pixellabltd.com">
             <button className={Style.btn}>CONTACT</button>
           </a>
         </div>
@@ -124,7 +124,7 @@ const Home = () => {
               Got Some Crazy Idea? <br /> Contact with us
             </p>
 
-            <a href="/contact">
+            <a href="mailto:support@pixellabltd.com">
               <button>CONTACT</button>
             </a>
           </div>
