@@ -20,10 +20,16 @@ import {
   faAndroid,
   faHtml5,
   faUnity,
-  faWindows,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
+  const takeToTheFooter = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -73,9 +79,10 @@ const Home = () => {
       <section className={Style.sec1}>
         <div className={Style.contentOverlay}>
           <TypingEffect />
-          <a href="mailto:support@pixellabltd.com">
-            <button className={Style.btn}>CONTACT</button>
-          </a>
+
+          <button onClick={takeToTheFooter} className={Style.btn}>
+            CONTACT
+          </button>
         </div>
 
         <Slider {...settings} className={Style.slider}>
@@ -124,9 +131,7 @@ const Home = () => {
               Got Some Crazy Idea? <br /> Contact with us
             </p>
 
-            <a href="mailto:support@pixellabltd.com">
-              <button>CONTACT</button>
-            </a>
+            <button onClick={takeToTheFooter}>CONTACT</button>
           </div>
         </section>
 

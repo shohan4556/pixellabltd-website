@@ -1,5 +1,6 @@
 .main {
-  padding: clamp(50px, 10vh, 250px) clamp(20px, 20vh, 30px);
+  /* padding: clamp(50px, 10vh, 250px) clamp(20px, 20vh, 30px); */
+  padding: 30px 30px;
 }
 .main h1 {
   padding-bottom: 50px;
@@ -62,6 +63,10 @@
 }
 
 @media screen and (min-width: 992px) {
+  .main {
+    padding: 30px 50px;
+  }
+
   .sec2 {
     flex-direction: row;
     justify-content: space-between;

@@ -1,27 +1,38 @@
-.privacyContainer {
+.main {
+  padding: 30px 30px;
+}
+.main {
   /* text-align: justify; */
   line-height: 2rem;
 }
-.privacyContainer h2,
-.privacyContainer h1 {
-  margin: clamp(30px, 5vh, 40px) 0;
+.main h2 {
+  margin: 30px 0;
   font-weight: 500;
 }
-.privacyContainer ul {
+.main h1 {
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+.main ul {
   padding-left: clamp(30px, 3vw, 50px);
 }
-.privacyContainer p,
-.privacyContainer li {
+.main p,
+.main li {
   color: var(--font1);
 }
-.privacyContainer a {
+.main a {
   color: #0298f5;
 }
-.privacyContainer a:hover {
+.main a:hover {
   /* color: #024ff5; */
   border-bottom: 1.5px solid #0298f5;
 }
-.privacyContainer p strong {
+.main p strong {
   color: var(--dark);
   /* color: black; */
+}
+@media screen and (min-width: 992px) {
+  .main {
+    padding: 30px 50px;
+  }
 }

@@ -1,9 +1,10 @@
 .main {
-  padding: clamp(100px, 10vh, 300px) clamp(20px, 5vh, 30px);
-
+  /* padding: clamp(100px, 10vh, 300px) clamp(20px, 5vh, 30px); */
+  padding: 30px 30px;
   display: flex;
   flex-direction: column;
   gap: clamp(5vh, 15vh, 20vh);
+  padding-bottom: 100px;
 }
 .sec1 {
   position: relative;
@@ -210,6 +211,9 @@
 @media screen and (min-width: 992px) {
   .main {
     /* gap: 15vh; */
+    /* padding: 30px 50px; */
+    /* padding-bottom: 200px; */
+    padding: clamp(100px, 10vh, 300px) 50px;
   }
   /***** Section 1 *****/
   .sec1 {
