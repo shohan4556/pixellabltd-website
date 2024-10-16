@@ -11,8 +11,7 @@ const Footer = () => {
       <div className={Style.sec1}>
         <div className={Style.left}>
           <p>
-            Contact us for sale, <br />
-            business, cooperation, advertising, …
+            Contact us for business, <br /> cooperation, advertising, …
           </p>
           <div>
             <a className={Style.mail} href="mailto:shohan@pixellabltd.com">
@@ -22,8 +21,8 @@ const Footer = () => {
             <p style={{ color: "white" }}>Email now</p>
           </div>
         </div>
-        <div className={Style.line}></div>
-        <div className={Style.right}>
+        {/* <div className={Style.line}></div> */}
+        {/* <div className={Style.right}>
           <p>
             We are hiring IT and <br /> gaming professionals from Asia.
           </p>
@@ -33,7 +32,7 @@ const Footer = () => {
               Contact
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className={Style.sec2}>
@@ -48,8 +47,6 @@ const Footer = () => {
         </div>
         <div>
           <p>2024. All rights reserved.</p>
-          {/* <a href="#">PRIVACY POLICY</a> <br /> */}
-          {/* <NavLink to="/privacyPolicy">PRIVACY POLICY</NavLink> */}
           <a href="/privacyPolicy">PRIVACY POLICY</a>
           <br />
           <a href="#">COOKIES</a>

@@ -4,9 +4,6 @@ import Style from "../assets/styles/about.module.css";
 const About = () => {
   return (
     <div>
-      <section className={Style.sec1}>
-        <h3>ABOUT</h3>
-      </section>
       <main className={Style.main}>
         <h1>ABOUT US</h1>
         <section className={Style.sec2}>

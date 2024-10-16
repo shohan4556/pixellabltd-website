@@ -32,9 +32,9 @@ const Contact = () => {
 
   return (
     <div>
-      <section className={Style.sec1}>
+      {/* <section className={Style.sec1}>
         <h2>CONTACT</h2>
-      </section>
+      </section> */}
       <main className={Style.main}>
         <h1>CONTACT US</h1>
         <section className={Style.sec2}>

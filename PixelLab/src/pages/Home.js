@@ -102,7 +102,7 @@ const Home = () => {
           </h2>
           <a href="/about">
             <p>Read about us</p>
-            <p>⇾</p>
+            <p>››</p>
           </a>
         </section>
 
