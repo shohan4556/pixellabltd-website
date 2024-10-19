@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0bb4998.css",
-    "main.js": "/static/js/main.c47d213d.js",
+    "main.css": "/static/css/main.61627837.css",
+    "main.js": "/static/js/main.b6eca5c9.js",
     "static/media/cards.png": "/static/media/cards.f60d9a0e60fdd59c5dbf.png",
     "static/media/solitaire.png": "/static/media/solitaire.ffc4d48babc43bdad854.png",
     "static/media/16Guti.png": "/static/media/16Guti.a8fb7727e43845b7d3fc.png",
-    "static/media/team.jpeg": "/static/media/team.0a8f466d4159b4c433d0.jpeg",
+    "static/media/pixelLabTeam.jpeg": "/static/media/pixelLabTeam.b9825f1f9f8985c728e3.jpeg",
     "static/media/hazari.jpg": "/static/media/hazari.7813b60af5c7e0b7db9c.jpg",
     "static/media/logo.png": "/static/media/logo.b27497468a8f34c11826.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -13,11 +13,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.c0bb4998.css.map": "/static/css/main.c0bb4998.css.map",
-    "main.c47d213d.js.map": "/static/js/main.c47d213d.js.map"
+    "main.61627837.css.map": "/static/css/main.61627837.css.map",
+    "main.b6eca5c9.js.map": "/static/js/main.b6eca5c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0bb4998.css",
-    "static/js/main.c47d213d.js"
+    "static/css/main.61627837.css",
+    "static/js/main.b6eca5c9.js"
   ]
 }
