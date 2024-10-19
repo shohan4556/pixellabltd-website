@@ -1,8 +1,9 @@
 import React from "react";
 import Style from "../assets/styles/footer.module.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 const Footer = () => {
   return (
@@ -45,10 +46,10 @@ const Footer = () => {
         </div>
         <div>
           <p>2024. All rights reserved.</p>
-          <a href="/privacyPolicy">PRIVACY POLICY</a>
+          {/* <a href="/privacyPolicy">PRIVACY POLICY</a> */}
+          <NavLink to={"/privacyPolicy"}>PRIVACY POLICY</NavLink>
         </div>
       </div>
-      {/* <small>T_anjid</small> */}
     </footer>
   );
 };

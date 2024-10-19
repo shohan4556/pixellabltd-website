@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Style from "../assets/styles/nav.module.css";
-import MenuBarIcon from "../assets/imgs/menu-bar.png";
-import CloseIcon from "../assets/imgs/cross.png";
 import Logo from "../assets/imgs/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStream, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -59,12 +57,12 @@ const Navbar = () => {
           </li>
           {/* <li>
             <NavLink
-              to="/contact"
+              to="/privacyPolicy"
               className={({ isActive }) =>
                 isActive ? Style.active : undefined
               }
             >
-              CONTACT
+              privacy
             </NavLink>
           </li> */}
           <li>
