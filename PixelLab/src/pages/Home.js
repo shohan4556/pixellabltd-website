@@ -21,6 +21,7 @@ import {
   faHtml5,
   faUnity,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const takeToTheFooter = () => {
@@ -107,10 +108,10 @@ const Home = () => {
             team crafts immersive and innovative gaming experiences tailored to
             these genres.
           </h2>
-          <a href="/about">
+          <Link to="/about">
             <p>Read about us</p>
             <p>››</p>
-          </a>
+          </Link>
         </section>
 
         <section className={Style.sec5}>

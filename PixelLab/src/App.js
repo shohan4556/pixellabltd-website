@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./pages/Navbar";
@@ -10,18 +10,16 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
-        {/* <div className="routes"> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
-        {/* </div> */}
         <GoTop />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

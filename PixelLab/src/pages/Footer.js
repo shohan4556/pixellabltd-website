@@ -47,7 +47,7 @@ const Footer = () => {
         <div>
           <p>2024. All rights reserved.</p>
           {/* <a href="/privacyPolicy">PRIVACY POLICY</a> */}
-          <NavLink to={"/privacyPolicy"}>PRIVACY POLICY</NavLink>
+          <Link to="privacyPolicy">PRIVACY POLICY</Link>
         </div>
       </div>
     </footer>
