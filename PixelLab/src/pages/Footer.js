@@ -1,11 +1,13 @@
 import React from "react";
 import Style from "../assets/styles/footer.module.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import PrivacyPolicy from "./PrivacyPolicy";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className={Style.footer}>
       <h1 className={Style.logo}>PixelLab Ltd.</h1>
@@ -46,8 +48,16 @@ const Footer = () => {
         </div>
         <div>
           <p>2024. All rights reserved.</p>
-          {/* <a href="/privacyPolicy">PRIVACY POLICY</a> */}
           <Link to="privacyPolicy">PRIVACY POLICY</Link>
+
+          {/* <button
+            style={{ color: "white" }}
+            onClick={() => {
+              navigate("/privacyPolicy");
+            }}
+          >
+            PRIVACY POLICY
+          </button> */}
         </div>
       </div>
     </footer>

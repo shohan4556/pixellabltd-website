@@ -47,7 +47,7 @@ const Navbar = () => {
         >
           <li>
             <NavLink
-              to="/"
+              to={"/"}
               className={({ isActive }) =>
                 isActive ? Style.active : undefined
               }
@@ -55,19 +55,19 @@ const Navbar = () => {
               HOME
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
-              to="/privacyPolicy"
+              to={"/blogs"}
               className={({ isActive }) =>
                 isActive ? Style.active : undefined
               }
             >
-              privacy
+              BLOGS
             </NavLink>
-          </li> */}
+          </li>
           <li>
             <NavLink
-              to="/about"
+              to={"/about"}
               className={({ isActive }) =>
                 isActive ? Style.active : undefined
               }

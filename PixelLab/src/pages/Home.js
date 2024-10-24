@@ -6,9 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import TypingEffect from "../comps/TypingEffect";
 
-import Bg from "../assets/imgs/bg.png";
-import Bg2 from "../assets/imgs/bg2.png";
-import Bg3 from "../assets/imgs/bg3.png";
 import Bg4 from "../assets/imgs/pixelLabTeam.jpeg";
 import Cards from "../assets/imgs/cards.png";
 import Hazari from "../assets/imgs/hazari.jpg";
@@ -21,9 +18,11 @@ import {
   faHtml5,
   faUnity,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const takeToTheFooter = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
@@ -112,6 +111,10 @@ const Home = () => {
             <p>Read about us</p>
             <p>››</p>
           </Link>
+          {/* <button onClick={() => navigate("/about")}>
+            <p>Read about us</p>
+            <p>››</p>
+          </button> */}
         </section>
 
         <section className={Style.sec5}>
