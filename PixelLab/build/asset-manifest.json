@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d91c74f.css",
-    "main.js": "/static/js/main.db591a4c.js",
+    "main.css": "/static/css/main.a527aa50.css",
+    "main.js": "/static/js/main.ecfa8077.js",
     "static/media/cards.png": "/static/media/cards.f60d9a0e60fdd59c5dbf.png",
     "static/media/solitaire.png": "/static/media/solitaire.ffc4d48babc43bdad854.png",
     "static/media/16Guti.png": "/static/media/16Guti.a8fb7727e43845b7d3fc.png",
+    "static/media/hazariIcon.png": "/static/media/hazariIcon.adb3ee17f492b42a04d3.png",
+    "static/media/solitaireIcon.png": "/static/media/solitaireIcon.e1e24b491a440672f0f5.png",
     "static/media/pixelLabTeam.jpeg": "/static/media/pixelLabTeam.b9825f1f9f8985c728e3.jpeg",
     "static/media/hazari.jpg": "/static/media/hazari.7813b60af5c7e0b7db9c.jpg",
     "static/media/logo.png": "/static/media/logo.b27497468a8f34c11826.png",
+    "static/media/shologutiIcon.png": "/static/media/shologutiIcon.a30d85992ca463a181e3.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.8d91c74f.css.map": "/static/css/main.8d91c74f.css.map",
-    "main.db591a4c.js.map": "/static/js/main.db591a4c.js.map"
+    "main.a527aa50.css.map": "/static/css/main.a527aa50.css.map",
+    "main.ecfa8077.js.map": "/static/js/main.ecfa8077.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d91c74f.css",
-    "static/js/main.db591a4c.js"
+    "static/css/main.a527aa50.css",
+    "static/js/main.ecfa8077.js"
   ]
 }
