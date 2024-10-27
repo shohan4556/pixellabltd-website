@@ -39,8 +39,8 @@
 
 .navMenu li a.active {
   color: var(--color1);
-  text-shadow: 1px 1px 0 #0000007d, -1px -1px 0 #0000007d, -1px 1px 0 #0000007d,
-    1px -1px 0 #0000007d;
+  /* text-shadow: 1px 1px 0 #0000007d, -1px -1px 0 #0000007d, -1px 1px 0 #0000007d,
+    1px -1px 0 #0000007d; */
 }
 .navMenu li a:hover {
   background: #3584d414;

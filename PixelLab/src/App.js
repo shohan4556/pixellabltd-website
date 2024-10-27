@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       {/* use HashRouter if navigation doesn't work */}
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,7 +25,7 @@ function App() {
         </Routes>
         <GoTop />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
