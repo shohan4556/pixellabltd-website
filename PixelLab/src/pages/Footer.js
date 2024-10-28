@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         <div>
           <p>2024. All rights reserved.</p>
-          <Link to="/privacyPolicy">PRIVACY POLICY</Link>
+          <Link to="/privacy">PRIVACY POLICY</Link>
         </div>
       </div>
     </footer>
