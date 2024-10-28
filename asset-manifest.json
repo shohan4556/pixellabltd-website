@@ -16,8 +16,5 @@
     "main.c0bb4998.css.map": "/static/css/main.c0bb4998.css.map",
     "main.c47d213d.js.map": "/static/js/main.c47d213d.js.map"
   },
-  "entrypoints": [
-    "static/css/main.c0bb4998.css",
-    "static/js/main.c47d213d.js"
-  ]
+  "entrypoints": ["static/css/main.c0bb4998.css", "static/js/main.c47d213d.js"]
 }

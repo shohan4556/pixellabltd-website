@@ -6,6 +6,11 @@
   --color1: #44b0ef; /*#ef4f44*/
   --color2: #67bbf0;
 }
+h1,
+h2,
+h3 {
+  color: var(--dark);
+}
 p {
   color: var(--font1);
 }
@@ -33,6 +38,7 @@ button {
 ul,
 li {
   list-style-type: none;
+  color: var(--font1);
 }
 
 main {

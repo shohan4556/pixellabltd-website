@@ -9,12 +9,14 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 // import Blogs from "./pages/BlogsPage/Blogs";
 import Blogs from "./pages/BlogsPage/Blogs";
 import BlogPost from "./pages/BlogsPage/BlogPost";
+import ScrollToTop from "./comps/ScrollToTop";
 
 function App() {
   return (
     <div>
       {/* use HashRouter if navigation doesn't work */}
       <HashRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

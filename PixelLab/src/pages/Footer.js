@@ -48,16 +48,7 @@ const Footer = () => {
         </div>
         <div>
           <p>2024. All rights reserved.</p>
-          <Link to="privacyPolicy">PRIVACY POLICY</Link>
-
-          {/* <button
-            style={{ color: "white" }}
-            onClick={() => {
-              navigate("/privacyPolicy");
-            }}
-          >
-            PRIVACY POLICY
-          </button> */}
+          <Link to="/privacyPolicy">PRIVACY POLICY</Link>
         </div>
       </div>
     </footer>

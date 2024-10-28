@@ -23,6 +23,10 @@
 .blog:hover {
   box-shadow: 0 0 10px #898989;
 }
+
+/* .left h2 {
+  color: var(--dark);
+} */
 .left p {
   padding: 10px 0;
 }
@@ -41,6 +45,8 @@
   font-weight: 500;
   outline: 1px solid black;
   transition: 0.1s ease all;
+  white-space: nowrap;
+  align-self: flex-start;
 }
 .blog a:hover {
   outline: 2px solid #1761ff;
@@ -54,9 +60,7 @@
     padding: 30px 40px;
   }
   .blog {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    gap: 20px;
     padding: 20px;
   }
 }

@@ -13,30 +13,73 @@
   width: 50px;
 }
 
+/***** description *****/
+
+.gameDesc section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.gameDesc h3 {
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.gameDesc ul {
+  padding-left: 50px;
+}
+.gameDesc ul li {
+  list-style-type: disc;
+}
+
+/* .gameDesc ul li::before {
+  content: "∘     ";
+} */
+
+/***** End description *****/
+
 .gameSlider {
+  /* border: 2px solid black; */
+  max-width: clamp(250px, 90vw, 800px);
   margin: 0 auto;
-  /* height: auto; */
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   border-radius: 10px;
-  /* width: 300px; */
-  /* height: 400px; */
-  /* max-height: 400px; */
+  max-height: 800px;
 }
 
 .gameSlider .slide {
-  border-radius: 10px;
-  /* border: 2px solid crimson; */
+  /* border: 2px solid red; */
+  margin: 0 auto;
   padding: 10px;
 }
 .gameSlider .slide img {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   border-radius: 10px;
-  max-height: 400px;
+  max-height: 550px;
   object-fit: contain;
+  /* border: 2px solid black; */
 }
 
+@media screen and (min-width: 576px) {
+  .gameSlider {
+    max-width: clamp(400px, 70vw, 900px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .gameSlider {
+    max-width: clamp(300px, 70vw, 600px);
+  }
+  .gameDesc h3 {
+    margin: 50px 0 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+  }
+}
 @media screen and (min-width: 992px) {
+  .gameSlider {
+    max-width: clamp(500px, 70vw, 900px);
+  }
   .main {
     padding: 30px 50px;
   }
