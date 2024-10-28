@@ -1,12 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a527aa50.css",
-    "main.js": "/static/js/main.ecfa8077.js",
+    "main.css": "/static/css/main.85d85f66.css",
+    "main.js": "/static/js/main.96fa7e62.js",
+    "static/media/solitaire3.png": "/static/media/solitaire3.3e50c50e8398f508d018.png",
+    "static/media/solitaire2.png": "/static/media/solitaire2.90215bcbfc49dc216eeb.png",
+    "static/media/solitaire4.png": "/static/media/solitaire4.f672a829bd5966442afa.png",
     "static/media/cards.png": "/static/media/cards.f60d9a0e60fdd59c5dbf.png",
     "static/media/solitaire.png": "/static/media/solitaire.ffc4d48babc43bdad854.png",
+    "static/media/Scn_02.png": "/static/media/Scn_02.53c27e1625c1c521d3d7.png",
     "static/media/16Guti.png": "/static/media/16Guti.a8fb7727e43845b7d3fc.png",
+    "static/media/Scn_03.png": "/static/media/Scn_03.ca2682de36566c25de38.png",
+    "static/media/Scn_9cards (1).png": "/static/media/Scn_9cards (1).f736413bbfac131fc249.png",
+    "static/media/Scn_9cards.png": "/static/media/Scn_9cards.f736413bbfac131fc249.png",
     "static/media/hazariIcon.png": "/static/media/hazariIcon.adb3ee17f492b42a04d3.png",
     "static/media/solitaireIcon.png": "/static/media/solitaireIcon.e1e24b491a440672f0f5.png",
+    "static/media/Screen_shot_07_bangla.png": "/static/media/Screen_shot_07_bangla.a245281dfeb5101f70cd.png",
+    "static/media/solitaire1.png": "/static/media/solitaire1.e78f0be32d9d18524d13.png",
+    "static/media/Screen-shot-01.png": "/static/media/Screen-shot-01.78beacc376f5aa491ae1.png",
+    "static/media/Screen_shot_8_bangla.png": "/static/media/Screen_shot_8_bangla.faa0d03172e0ba6b80a5.png",
+    "static/media/Screen_shot_09_bangla.png": "/static/media/Screen_shot_09_bangla.794a2e995d7c6033b019.png",
     "static/media/pixelLabTeam.jpeg": "/static/media/pixelLabTeam.b9825f1f9f8985c728e3.jpeg",
     "static/media/hazari.jpg": "/static/media/hazari.7813b60af5c7e0b7db9c.jpg",
     "static/media/logo.png": "/static/media/logo.b27497468a8f34c11826.png",
@@ -16,11 +28,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.a527aa50.css.map": "/static/css/main.a527aa50.css.map",
-    "main.ecfa8077.js.map": "/static/js/main.ecfa8077.js.map"
+    "main.85d85f66.css.map": "/static/css/main.85d85f66.css.map",
+    "main.96fa7e62.js.map": "/static/js/main.96fa7e62.js.map"
   },
   "entrypoints": [
-    "static/css/main.a527aa50.css",
-    "static/js/main.ecfa8077.js"
+    "static/css/main.85d85f66.css",
+    "static/js/main.96fa7e62.js"
   ]
 }
