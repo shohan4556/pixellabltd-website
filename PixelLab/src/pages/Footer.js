@@ -1,13 +1,10 @@
 import React from "react";
 import Style from "../assets/styles/footer.module.css";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import PrivacyPolicy from "./PrivacyPolicy";
 
 const Footer = () => {
-  const navigate = useNavigate();
-
   return (
     <footer className={Style.footer}>
       <h1 className={Style.logo}>PixelLab Ltd.</h1>
