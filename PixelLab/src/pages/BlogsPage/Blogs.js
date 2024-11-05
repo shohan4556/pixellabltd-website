@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import shologutiIcon from "../../assets/imgs/blogs/shologuti/shologutiIcon.png";
 import hazariIcon from "../../assets/imgs/blogs/hazari/hazariIcon.png";
 import solitaireIcon from "../../assets/imgs/blogs/solitaire/solitaireIcon.png";
+import cardKingIcon from "../../assets/imgs/blogs/cardKing/cardKingIcon.png";
 
 const Blogs = () => {
   const blogs = [
@@ -25,6 +26,13 @@ const Blogs = () => {
     },
     {
       id: 3,
+      title: "Card King: 6 in 1 Card Games",
+      gameLogo: cardKingIcon,
+      description:
+        "Play popular Indian card games offline for free! Enjoy Callbreak (Lakdi), Hazari, Kitti (Brag), Callbridge, Spades, and Hearts in one app. Download now to play 6 classic card games anytime, anywhere!.",
+    },
+    {
+      id: 4,
       title: "Grand Solitaire",
       gameLogo: solitaireIcon,
       description:

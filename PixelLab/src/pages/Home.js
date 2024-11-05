@@ -145,11 +145,11 @@ const Home = () => {
           <Slider {...gameSliderSettings} className={Style.gameSlider}>
             <div className={Style.slide}>
               <a
-                href="https://play.google.com/store/apps/details?id=com.pixellab.solitaire.classic.klondike&hl=en"
+                href="https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro&hl=en"
                 target="_blank"
                 rel="noopener & noreferrer"
               >
-                <img src={Solitaire} alt="" />
+                <img src={SholoGuti} alt="" />
               </a>
             </div>
             <div className={Style.slide}>
@@ -161,18 +161,23 @@ const Home = () => {
                 <img src={Hazari} alt="" />
               </a>
             </div>
+
             <div className={Style.slide}>
               <a
-                href="https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro&hl=en"
+                href="https://play.google.com/store/apps/details?id=com.pixellab.card.king&hl=en"
                 target="_blank"
                 rel="noopener & noreferrer"
               >
-                <img src={SholoGuti} alt="" />
+                <img src={Cards} alt="" />
               </a>
             </div>
             <div className={Style.slide}>
-              <a href="#">
-                <img src={Cards} alt="" />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.pixellab.solitaire.classic.klondike&hl=en"
+                target="_blank"
+                rel="noopener & noreferrer"
+              >
+                <img src={Solitaire} alt="" />
               </a>
             </div>
           </Slider>

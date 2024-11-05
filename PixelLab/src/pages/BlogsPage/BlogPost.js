@@ -14,6 +14,13 @@ import hazariSS2 from "../../assets/imgs/blogs/hazari/Scn_03.png";
 import hazariSS3 from "../../assets/imgs/blogs/hazari/Scn_9cards.png";
 import hazariSS4 from "../../assets/imgs/blogs/hazari/Scn_9cards (1).png";
 //
+import cardKingIcon from "../../assets/imgs/blogs/solitaire/solitaireIcon.png";
+import cardKingSS1 from "../../assets/imgs/blogs/cardKing/cardKingSS1.png";
+import cardKingSS2 from "../../assets/imgs/blogs/cardKing/cardKingSS2.png";
+import cardKingSS3 from "../../assets/imgs/blogs/cardKing/cardKingSS3.png";
+import cardKingSS4 from "../../assets/imgs/blogs/cardKing/cardKingSS4.png";
+
+//
 import solitaireIcon from "../../assets/imgs/blogs/solitaire/solitaireIcon.png";
 import solitaireSS1 from "../../assets/imgs/blogs/solitaire/solitaire1.png";
 import solitaireSS2 from "../../assets/imgs/blogs/solitaire/solitaire2.png";
@@ -214,6 +221,110 @@ const BlogPost = () => {
       gamePlayImgs: [hazariSS1, hazariSS2, hazariSS3, hazariSS4],
     },
     3: {
+      title: "Card King: 6 in 1 Card Games",
+      content: (
+        <div className={Style.gameDesc}>
+          <section>
+            <p>
+              Play popular Indian card games offline for free! Enjoy Callbreak
+              (Lakdi), Hazari, Kitti (Brag), Callbridge, Spades, and Hearts in
+              one app. Download now to play 6 classic card games anytime,
+              anywhere!. Enjoy 6 offline indian card games in 1 pack. All the
+              indian card games are free to play !
+            </p>
+          </section>
+          <section>
+            <h3>Key Features</h3>
+            <ul>
+              <li>Play 6 popular Indian card games in one app</li>
+              <li>Offline gameplay – enjoy card games without internet</li>
+              <li>Realistic AI opponents for an authentic experience</li>
+              <li>Spin the daily bonus wheel and collect rewards</li>
+              <li>Full HD graphics and customizable tables</li>
+              <li>Regular hourly bonuses to keep the game going</li>
+              <li>Easy card sorting and player profile customization</li>
+              <li>No real-money gambling – pure fun card games !</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Card Games: </h3>
+            <ul>
+              <li>Callbreak or Lakdi (लकड़ी)</li>
+              <li>Hazari (হাজারী)</li>
+              <li>Kitti, 9 cards (Brag)</li>
+              <li>Callbridge</li>
+              <li>Hearts</li>
+              <li>Spades</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Callbreak (Lakdi):</h3>
+            <p>
+              Callbreak, also known as Lakdi, is a popular Indian card game
+              played with 4 players and a standard 52-card deck. Each player
+              gets 13 cards, and spades act as trump cards. Win tricks to score
+              points in this addictive offline card game!
+            </p>
+          </section>
+          <section>
+            <h3>hazari:</h3>
+            <p>
+              Hazari (হাজারী) is a strategic card game where players compete to
+              score points based on card rankings. Each suit’s ranks range from
+              Ace to 2, with different points assigned. Play counterclockwise
+              and see who can reach the highest score in this exciting Indian
+              card game.
+            </p>
+          </section>
+          <section>
+            <h3>Kitti (9 cards, Brag):</h3>
+            <p>
+              Kitti (Brag) is a unique 9-card game where players arrange cards
+              into sets and compete for the highest show. Play with 2-5 players
+              and win consecutive rounds to become the champion of this offline
+              tash game.
+            </p>
+          </section>
+          <section>
+            <h3>callbridge:</h3>
+            <p>
+              Callbridge is similar to Callbreak. Each player matches the suit
+              if possible, and spades serve as trump cards. Reach 13 points
+              first to win in this challenging game of strategy and skill.
+            </p>
+          </section>
+          <section>
+            <h3>hearts:</h3>
+            <p>
+              "Hearts, also known as Black Queen or Rickety Kate, is a
+              trick-taking game where players aim to avoid collecting certain
+              cards. Simple to learn, difficult to master!
+            </p>
+          </section>
+          <section>
+            <h3>Spades Classic (Batak):</h3>
+            <p>
+              Spades is a classic trick-taking card game where spades are the
+              trump suit. Players compete to win tricks and reach the highest
+              score in this timeless game.
+            </p>
+          </section>
+          <section>
+            <p>
+              Download now to play the best offline Indian card games anytime,
+              anywhere! We’re working on adding even more card games and
+              introducing multiplayer modes, including offline hotspot
+              multiplayer and online multiplayer. Soon, you’ll be able to enjoy
+              Callbreak, Hazari, Kitti, Hearts, and Spades with friends and
+              family!"
+            </p>
+          </section>
+        </div>
+      ),
+      imageUrl: cardKingIcon,
+      gamePlayImgs: [cardKingSS1, cardKingSS2, cardKingSS3, cardKingSS4],
+    },
+    4: {
       title: "Grand Solitaire",
       content: (
         <div className={Style.gameDesc}>
