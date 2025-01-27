@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8b3dfdd.css",
-    "main.js": "/static/js/main.f48d69d2.js",
+    "main.css": "/static/css/main.8ab2269c.css",
+    "main.js": "/static/js/main.ffc3d222.js",
     "static/media/solitaire3.png": "/static/media/solitaire3.3e50c50e8398f508d018.png",
     "static/media/solitaire2.png": "/static/media/solitaire2.90215bcbfc49dc216eeb.png",
     "static/media/solitaire4.png": "/static/media/solitaire4.f672a829bd5966442afa.png",
@@ -33,11 +33,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.e8b3dfdd.css.map": "/static/css/main.e8b3dfdd.css.map",
-    "main.f48d69d2.js.map": "/static/js/main.f48d69d2.js.map"
+    "main.8ab2269c.css.map": "/static/css/main.8ab2269c.css.map",
+    "main.ffc3d222.js.map": "/static/js/main.ffc3d222.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8b3dfdd.css",
-    "static/js/main.f48d69d2.js"
+    "static/css/main.8ab2269c.css",
+    "static/js/main.ffc3d222.js"
   ]
 }
