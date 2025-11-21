@@ -81,7 +81,7 @@ const Home = () => {
         <section className={Style.sec2}>
           <h2>
             We are PixelLab, a dynamic game development company
-            specializing in the creation of engaging social games. With
+            specializing in the creation of engaging social. With
             a passion for creativity and cutting-edge technology, our talented
             team crafts immersive and innovative gaming experiences tailored to
             these genres.
@@ -97,22 +97,8 @@ const Home = () => {
           </div>
         </section>
 
-        {/* <section className={Style.sec3}>
-          <div>
-            <img src={Bg4} alt="" />
-          </div>
-          <div>
-            <h1>Our team has all it takes to create awesome games</h1>
-            <p>
-              Got Some Crazy Idea? <br /> Contact with us
-            </p>
-
-            <button onClick={takeToTheFooter}>CONTACT</button>
-          </div>
-        </section> */}
-
         <section className={Style.sec4}>
-          <h1>PORTFOLIO</h1>
+          {/* <h1>PORTFOLIO</h1> */}
 
           <Slider {...gameSliderSettings} className={Style.gameSlider}>
             <div className={Style.slide}>
