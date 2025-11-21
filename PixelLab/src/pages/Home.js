@@ -10,7 +10,8 @@ import Bg4 from "../assets/imgs/pixelLabTeam.jpeg";
 import Cards from "../assets/imgs/cards.png";
 import Hazari from "../assets/imgs/hazari.jpg";
 import Solitaire from "../assets/imgs/solitaire.png";
-import SholoGuti from "../assets/imgs/16Guti.png";
+import shologutiIcon from "./../assets/imgs/16guti_icon.png";
+import shologutiCover from "./../assets/imgs/16Guti.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -145,12 +146,12 @@ const Home = () => {
 
           <div className={Style.slide}>
             <GameCard
-              icon={SholoGuti}
+              icon={shologutiIcon}
               title="Sholo Guti Pro: Online"
               publisher="PixelLab"
               // appstore=""
               playstore="https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro"
-              bigImage={SholoGuti}
+              bigImage={shologutiCover}
             />
           </div>
 

@@ -444,3 +444,7 @@
     width: 100%;
   }
 }
+
+.sec4 > .slide {
+  margin-bottom: 40px;
+}
