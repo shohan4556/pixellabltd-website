@@ -19,6 +19,7 @@ import {
   faUnity,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import GameCard from "../comps/GameCard";
 
 const Home = () => {
   // const navigate = useNavigate();
@@ -92,7 +93,7 @@ const Home = () => {
         <section className={Style.sec5}>
           <div>
             <FontAwesomeIcon icon={faUnity} />
-            <FontAwesomeIcon icon={faAndroid} />
+            {/* <FontAwesomeIcon icon={faAndroid} /> */}
             <FontAwesomeIcon icon={faHtml5} />
           </div>
         </section>
@@ -140,24 +141,50 @@ const Home = () => {
             </div>
           </Slider> */}
 
-          <div className={Style.bigGameCard}>
-            <div className={Style.bigGameLeft}>
-              <img src={SholoGuti} className={Style.leftIcon} alt="game icon" />
+          {/* <Slider {...gameSliderSettings}> */}
 
-              <div className={Style.leftInfo}>
-                <h2>Sholo Guti Pro: Online</h2>
-                <div className={Style.downloadRow}>
-                  <a href="#" target="_blank">
-                    <img src="/google_play.svg" alt="Google Play" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className={Style.bigGameRight}>
-              <img src={SholoGuti} alt="game art" />
-            </div>
+          <div className={Style.slide}>
+            <GameCard
+              icon={SholoGuti}
+              title="Sholo Guti Pro: Online"
+              publisher="PixelLab"
+              // appstore=""
+              playstore="https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro"
+              bigImage={SholoGuti}
+            />
           </div>
+
+          <div className={Style.slide}>
+            <GameCard
+              icon={Hazari}
+              title="Hazari Gold"
+              publisher="PixelLab"
+              playstore="https://play.google.com/store/apps/details?id=com.pixellab.hazari.card.game"
+              bigImage={Hazari}
+            />
+          </div>
+
+          <div className={Style.slide}>
+            <GameCard
+              icon={Cards}
+              title="Card King"
+              publisher="PixelLab"
+              playstore="https://play.google.com/store/apps/details?id=com.pixellab.card.king"
+              bigImage={Cards}
+            />
+          </div>
+
+          <div className={Style.slide}>
+            <GameCard
+              icon={Solitaire}
+              title="Solitaire Classic"
+              publisher="PixelLab"
+              playstore="https://play.google.com/store/apps/details?id=com.pixellab.solitaire.classic.klondike"
+              bigImage={Solitaire}
+            />
+          </div>
+
+          {/* </Slider> */}
 
 
 

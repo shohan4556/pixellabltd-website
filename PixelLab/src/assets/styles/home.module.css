@@ -83,7 +83,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -308,6 +308,70 @@
   display: flex !important;
   background: #fff;
   border-radius: 16px;
+  padding: 100px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  gap: 100px;
+  align-items: center;
+  width: 100%;
+}
+
+.bigGameLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 45%;
+}
+
+.leftIcon {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.leftInfo h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.leftInfo p {
+  font-size: 16px;
+  margin: 6px 0 12px 0;
+}
+
+.leftInfo span {
+  color: #e67e22;
+  font-weight: 600;
+}
+
+.downloadRow {
+  display: flex;
+  gap: 15px;
+}
+
+.downloadRow img {
+  width: 150px;
+  height: auto;
+}
+
+.bigGameRight {
+  width: 55%;
+}
+
+.bigGameRight img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+
+
+.bigGameCard {
+  display: flex !important;
+  background: #fff;
+  border-radius: 16px;
   padding: 20px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
   gap: 30px;
@@ -366,4 +430,17 @@
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .bigGameCard {
+    flex-direction: column;
+    padding: 15px;
+  }
 
+  .bigGameLeft {
+    width: 100%;
+  }
+
+  .bigGameRight {
+    width: 100%;
+  }
+}
