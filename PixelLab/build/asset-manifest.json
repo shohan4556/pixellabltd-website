@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ab2269c.css",
-    "main.js": "/static/js/main.ffc3d222.js",
+    "main.css": "/static/css/main.cf06ac68.css",
+    "main.js": "/static/js/main.c75aa1be.js",
     "static/media/solitaire3.png": "/static/media/solitaire3.3e50c50e8398f508d018.png",
     "static/media/solitaire2.png": "/static/media/solitaire2.90215bcbfc49dc216eeb.png",
     "static/media/solitaire4.png": "/static/media/solitaire4.f672a829bd5966442afa.png",
-    "static/media/cards.png": "/static/media/cards.f60d9a0e60fdd59c5dbf.png",
     "static/media/cardKingSS2.png": "/static/media/cardKingSS2.323f0caa6a0827998cd4.png",
     "static/media/cardKingSS4.png": "/static/media/cardKingSS4.0aa997328c9ce40ff337.png",
     "static/media/cardKingSS1.png": "/static/media/cardKingSS1.ef353d81340374452d33.png",
-    "static/media/solitaire.png": "/static/media/solitaire.ffc4d48babc43bdad854.png",
     "static/media/Scn_02.png": "/static/media/Scn_02.53c27e1625c1c521d3d7.png",
     "static/media/cardKingSS3.png": "/static/media/cardKingSS3.b9eab99642654822ce8a.png",
     "static/media/16Guti.png": "/static/media/16Guti.a8fb7727e43845b7d3fc.png",
     "static/media/Scn_03.png": "/static/media/Scn_03.ca2682de36566c25de38.png",
     "static/media/Scn_9cards (1).png": "/static/media/Scn_9cards (1).f736413bbfac131fc249.png",
     "static/media/Scn_9cards.png": "/static/media/Scn_9cards.f736413bbfac131fc249.png",
+    "static/media/blockbusterCover.png": "/static/media/blockbusterCover.df793483ebcc17a67997.png",
     "static/media/hazariIcon.png": "/static/media/hazariIcon.adb3ee17f492b42a04d3.png",
+    "static/media/blockbusterIcon.png": "/static/media/blockbusterIcon.d8b4c5f96368dd991bfa.png",
     "static/media/solitaireIcon.png": "/static/media/solitaireIcon.e1e24b491a440672f0f5.png",
+    "static/media/16guti_icon.png": "/static/media/16guti_icon.0265c81d42ce4f13d102.png",
     "static/media/Screen_shot_07_bangla.png": "/static/media/Screen_shot_07_bangla.a245281dfeb5101f70cd.png",
+    "static/media/kitti_icon.png": "/static/media/kitti_icon.125c8a517bcbd4b5d389.png",
     "static/media/solitaire1.png": "/static/media/solitaire1.e78f0be32d9d18524d13.png",
     "static/media/Screen-shot-01.png": "/static/media/Screen-shot-01.78beacc376f5aa491ae1.png",
     "static/media/Screen_shot_8_bangla.png": "/static/media/Screen_shot_8_bangla.faa0d03172e0ba6b80a5.png",
     "static/media/Screen_shot_09_bangla.png": "/static/media/Screen_shot_09_bangla.794a2e995d7c6033b019.png",
     "static/media/pixelLabTeam.jpeg": "/static/media/pixelLabTeam.b9825f1f9f8985c728e3.jpeg",
-    "static/media/hazari.jpg": "/static/media/hazari.7813b60af5c7e0b7db9c.jpg",
+    "static/media/cover_kitti.jpg": "/static/media/cover_kitti.aa1ad7b5d68b97ae192c.jpg",
     "static/media/cardKingIcon.png": "/static/media/cardKingIcon.19e0e7f5a23317e10ff6.png",
     "static/media/logo.png": "/static/media/logo.b27497468a8f34c11826.png",
     "static/media/shologutiIcon.png": "/static/media/shologutiIcon.a30d85992ca463a181e3.png",
@@ -33,11 +35,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.8ab2269c.css.map": "/static/css/main.8ab2269c.css.map",
-    "main.ffc3d222.js.map": "/static/js/main.ffc3d222.js.map"
+    "main.cf06ac68.css.map": "/static/css/main.cf06ac68.css.map",
+    "main.c75aa1be.js.map": "/static/js/main.c75aa1be.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ab2269c.css",
-    "static/js/main.ffc3d222.js"
+    "static/css/main.cf06ac68.css",
+    "static/js/main.c75aa1be.js"
   ]
 }
