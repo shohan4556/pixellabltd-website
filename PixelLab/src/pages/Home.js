@@ -7,11 +7,15 @@ import "slick-carousel/slick/slick-theme.css";
 import TypingEffect from "../comps/TypingEffect";
 
 import Bg4 from "../assets/imgs/pixelLabTeam.jpeg";
-import Cards from "../assets/imgs/cards.png";
-import Hazari from "../assets/imgs/hazari.jpg";
-import Solitaire from "../assets/imgs/solitaire.png";
+// import Cards from "../assets/imgs/cards.png";
+// import hazariCover from "../assets/imgs/hazari.jpg";
 import shologutiIcon from "./../assets/imgs/16guti_icon.png";
 import shologutiCover from "./../assets/imgs/16Guti.png";
+import kittiIcon from "./../assets/imgs/kitti_icon.png";
+import kittiCover from "./../assets/imgs/cover_kitti.jpg";
+import blockbusterIcon from "./../assets/imgs/blockbusterIcon.png";
+import blockbusterCover from "./../assets/imgs/blockbusterCover.png";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -94,7 +98,7 @@ const Home = () => {
         <section className={Style.sec5}>
           <div>
             <FontAwesomeIcon icon={faUnity} />
-            {/* <FontAwesomeIcon icon={faAndroid} /> */}
+            <FontAwesomeIcon icon={faAndroid} />
             <FontAwesomeIcon icon={faHtml5} />
           </div>
         </section>
@@ -148,7 +152,7 @@ const Home = () => {
             <GameCard
               icon={shologutiIcon}
               title="Sholo Guti Pro: Online"
-              publisher="PixelLab"
+              publisher="PixelLab Ltd"
               // appstore=""
               playstore="https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro"
               bigImage={shologutiCover}
@@ -157,25 +161,25 @@ const Home = () => {
 
           <div className={Style.slide}>
             <GameCard
-              icon={Hazari}
-              title="Hazari Gold"
-              publisher="PixelLab"
-              playstore="https://play.google.com/store/apps/details?id=com.pixellab.hazari.card.game"
-              bigImage={Hazari}
+              icon={kittiIcon}
+              title="Kitti (9 Cards)"
+              publisher="PixelLab Ltd"
+              playstore="https://play.google.com/store/apps/details?id=com.pixellab.ninecards.kitti"
+              bigImage={kittiCover}
             />
           </div>
 
           <div className={Style.slide}>
             <GameCard
-              icon={Cards}
-              title="Card King"
-              publisher="PixelLab"
-              playstore="https://play.google.com/store/apps/details?id=com.pixellab.card.king"
-              bigImage={Cards}
+              icon={blockbusterIcon}
+              title="BlockBuster - Star Girl"
+              publisher="PixelLab Ltd"
+              playstore="https://play.google.com/store/apps/details?id=com.pixellab.blockbuster.puzzle"
+              bigImage={blockbusterCover}
             />
           </div>
 
-          <div className={Style.slide}>
+          {/* <div className={Style.slide}>
             <GameCard
               icon={Solitaire}
               title="Solitaire Classic"
@@ -183,7 +187,7 @@ const Home = () => {
               playstore="https://play.google.com/store/apps/details?id=com.pixellab.solitaire.classic.klondike"
               bigImage={Solitaire}
             />
-          </div>
+          </div> */}
 
           {/* </Slider> */}
 
