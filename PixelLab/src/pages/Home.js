@@ -100,7 +100,7 @@ const Home = () => {
         <section className={Style.sec4}>
           {/* <h1>PORTFOLIO</h1> */}
 
-          <Slider {...gameSliderSettings} className={Style.gameSlider}>
+          {/* <Slider {...gameSliderSettings} className={Style.gameSlider}>
             <div className={Style.slide}>
               <a
                 href="https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro&hl=en"
@@ -138,7 +138,29 @@ const Home = () => {
                 <img src={Solitaire} alt="" />
               </a>
             </div>
-          </Slider>
+          </Slider> */}
+
+          <div className={Style.bigGameCard}>
+            <div className={Style.bigGameLeft}>
+              <img src={SholoGuti} className={Style.leftIcon} alt="game icon" />
+
+              <div className={Style.leftInfo}>
+                <h2>Sholo Guti Pro: Online</h2>
+                <div className={Style.downloadRow}>
+                  <a href="#" target="_blank">
+                    <img src="/google_play.svg" alt="Google Play" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={Style.bigGameRight}>
+              <img src={SholoGuti} alt="game art" />
+            </div>
+          </div>
+
+
+
         </section>
       </main>
     </div>

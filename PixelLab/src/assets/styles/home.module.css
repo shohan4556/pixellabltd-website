@@ -253,3 +253,117 @@
     width: 90%;
   }
 }
+
+
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.gameCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.gameCard img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.playBtn img {
+  width: 160px;
+}
+
+.trailerBtn {
+  background: #cc0000;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .2s ease;
+}
+
+.trailerBtn:hover {
+  opacity: .8;
+}
+
+
+.bigGameCard {
+  display: flex !important;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.bigGameLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 45%;
+}
+
+.leftIcon {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.leftInfo h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.leftInfo p {
+  font-size: 16px;
+  margin: 6px 0 12px 0;
+}
+
+.leftInfo span {
+  color: #e67e22;
+  font-weight: 600;
+}
+
+.downloadRow {
+  display: flex;
+  gap: 15px;
+}
+
+.downloadRow img {
+  width: 150px;
+  height: auto;
+}
+
+.bigGameRight {
+  width: 55%;
+}
+
+.bigGameRight img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+
