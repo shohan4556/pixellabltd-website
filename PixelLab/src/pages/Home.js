@@ -76,45 +76,17 @@ const Home = () => {
   };
   return (
     <div>
-      {/* <section className={Style.sec1}>
-        <div className={Style.contentOverlay}>
-          <TypingEffect />
-
-          <button onClick={takeToTheFooter} className={Style.btn}>
-            CONTACT
-          </button>
-        </div>
-
-        <Slider {...settings} className={Style.slider}>
-          <div className={Style.slide}>
-            <img src={Cards} alt="" />
-          </div>
-          <div className={Style.slide}>
-            <img src={SholoGuti} alt="" />
-          </div>
-          <div className={Style.slide}>
-            <img src={Solitaire} alt="" />
-          </div>
-        </Slider>
-      </section> */}
 
       <main className={Style.main}>
         <section className={Style.sec2}>
           <h2>
             We are PixelLab, a dynamic game development company
-            specializing in the creation of engaging board and card games. With
+            specializing in the creation of engaging social games. With
             a passion for creativity and cutting-edge technology, our talented
             team crafts immersive and innovative gaming experiences tailored to
             these genres.
           </h2>
-          {/* <Link to="/about">
-            <p>Read about us</p>
-            <p>››</p>
-          </Link> */}
-          {/* <button onClick={() => navigate("/about")}>
-            <p>Read about us</p>
-            <p>››</p>
-          </button> */}
+
         </section>
 
         <section className={Style.sec5}>
