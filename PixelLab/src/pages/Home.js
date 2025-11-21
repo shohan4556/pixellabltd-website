@@ -76,7 +76,7 @@ const Home = () => {
   };
   return (
     <div>
-      <section className={Style.sec1}>
+      {/* <section className={Style.sec1}>
         <div className={Style.contentOverlay}>
           <TypingEffect />
 
@@ -96,21 +96,21 @@ const Home = () => {
             <img src={Solitaire} alt="" />
           </div>
         </Slider>
-      </section>
+      </section> */}
 
       <main className={Style.main}>
         <section className={Style.sec2}>
           <h2>
-            Hello! We are PixelLab, a dynamic game development company
+            We are PixelLab, a dynamic game development company
             specializing in the creation of engaging board and card games. With
             a passion for creativity and cutting-edge technology, our talented
             team crafts immersive and innovative gaming experiences tailored to
             these genres.
           </h2>
-          <Link to="/about">
+          {/* <Link to="/about">
             <p>Read about us</p>
             <p>››</p>
-          </Link>
+          </Link> */}
           {/* <button onClick={() => navigate("/about")}>
             <p>Read about us</p>
             <p>››</p>
@@ -125,7 +125,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className={Style.sec3}>
+        {/* <section className={Style.sec3}>
           <div>
             <img src={Bg4} alt="" />
           </div>
@@ -137,10 +137,10 @@ const Home = () => {
 
             <button onClick={takeToTheFooter}>CONTACT</button>
           </div>
-        </section>
+        </section> */}
 
         <section className={Style.sec4}>
-          <h1>OUR GAMES</h1>
+          <h1>PORTFOLIO</h1>
 
           <Slider {...gameSliderSettings} className={Style.gameSlider}>
             <div className={Style.slide}>

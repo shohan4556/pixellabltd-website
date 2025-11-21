@@ -7,24 +7,23 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <footer className={Style.footer}>
-      <h1 className={Style.logo}>PixelLab Ltd.</h1>
+      <h1 className={Style.logo}>PixelLab Ltd</h1>
       <div className={Style.sec1}>
         <div className={Style.left}>
-          <p>
+          {/* <p>
             Contact us for business, <br /> cooperation, advertising, …
-          </p>
+          </p> */}
           <div>
-            <a className={Style.mail} href="mailto:shohan@pixellabltd.com">
-              support@pixellabltd.com
-            </a>
-            <br />
-            <p style={{ color: "white" }}>Email now</p>
+            <h2 className={Style.mail}>Contact</h2>
+            <p>shohan@pixellabltd.com</p>
+            {/* <br />
+            <p style={{ color: "white" }}>Email now</p> */}
           </div>
         </div>
         <div className={Style.line}></div>
         <div className={Style.right}>
           <div>
-            <h2 className={Style.mail}>Our Address</h2>
+            <h2 className={Style.mail}>Address</h2>
           </div>
           <p>
             Plot. 37, Road 11, Block H, Level 3, Ventura Iconia <br />
@@ -44,7 +43,7 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <p>2024. All rights reserved.</p>
+          <p>2025. All rights reserved.</p>
           <Link to="/privacy">PRIVACY POLICY</Link>
         </div>
       </div>

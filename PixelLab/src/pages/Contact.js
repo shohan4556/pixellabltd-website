@@ -37,7 +37,7 @@ const Contact = () => {
         <section className={Style.sec2}>
           <div className={Style.left}>
             <p>
-              <strong>SAY HELLO</strong> <br /> support@pixellabltd.com
+              <strong>SAY HELLO</strong> <br /> shohan@pixellabltd.com
             </p>
             <p>
               <strong>OUR ADDRESS</strong> <br /> Plot. 37, Road 11, Block H,
@@ -93,7 +93,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <button type="submit">
-              <a href="mailto:tanjid3656@gmail.com">SEND</a>
+              <a href="mailto:shohan@pixellabltd.com">SEND</a>
             </button>
           </form>
         </section>

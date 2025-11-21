@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
           PixelLab Ltd. may terminate its relationship with You. If You believe
           We have not adhered to this Privacy Policy or if You have any other
           questions regarding this Privacy Policy, please contact Us at{" "}
-          <a href="mailto:support@pixellabltd.com">support@pixellabltd.com</a>.
+          <a href="mailto:shohan@pixellabltd.com">shohan@pixellabltd.com</a>.
         </p>
 
         <h2>WHICH DATA ARE WE COLLECTING?</h2>
@@ -294,7 +294,7 @@ const PrivacyPolicy = () => {
           You have right to have Your data deleted, object how We use Your data,
           or restrict how We share Your data. In any of these cases You can
           contact Us by sending an email to Us at{" "}
-          <a href="mailto:support@pixellabltd.com">support@pixellabltd.com</a>{" "}
+          <a href="mailto:shohan@pixellabltd.com">shohan@pixellabltd.com</a>{" "}
           or write Us at:
         </p>
         <p>
@@ -309,7 +309,7 @@ const PrivacyPolicy = () => {
           by contacting Us. If You believe that any Personal Information
           collected by Us about You is not correct or has changed, please send
           an e-mail message to{" "}
-          <a href="mailto:support@pixellabltd.com">support@pixellabltd.com</a>{" "}
+          <a href="mailto:shohan@pixellabltd.com">shohan@pixellabltd.com</a>{" "}
           explaining the correction or change and providing any relevant
           confirmation or reference number.
         </p>
@@ -327,7 +327,7 @@ const PrivacyPolicy = () => {
         <p>
           If You have a privacy question about this Website, please email
           Customer Service at{" "}
-          <a href="mailto:support@pixellabltd.com">support@pixellabltd.com</a>
+          <a href="mailto:shohan@pixellabltd.com">shohan@pixellabltd.com</a>
         </p>
       </main>
     </div>
