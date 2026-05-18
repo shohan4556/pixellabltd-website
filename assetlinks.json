@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pixellab.bead.online.board.game",
+      "sha256_cert_fingerprints": [
+        "E6:E2:B2:6B:6C:AD:20:BF:41:08:E9:D3:9E:A3:94:15:0B:26:D2:3E:AB:2B:95:8E:25:1D:FF:AE:F3:86:69:9F"
+      ]
+    }
+  }
+]
