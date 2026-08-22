@@ -112,14 +112,28 @@
   .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
   /* nav */
-  .site-header { position: relative; z-index: 3; padding: 22px 0; }
+  .site-header {
+    position: sticky; top: 0; z-index: 40;
+    padding: 14px 0;
+    background: rgba(18,16,15,0.72);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 8px 24px -18px rgba(0,0,0,0.6);
+  }
   .site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
-  .brand img { height: 32px; width: 32px; border-radius: 8px; }
-  .site-header nav { display: flex; gap: 28px; font-size: 14px; font-weight: 500; color: var(--text-secondary); }
-  .site-header nav a { transition: color 0.2s ease; }
-  .site-header nav a:hover { color: var(--text); }
-  @media (max-width: 620px) { .site-header nav { display: none; } }
+  .brand img { height: 32px; width: 32px; border-radius: 8px; transition: transform 0.2s ease; }
+  .brand:hover img { transform: scale(1.06) rotate(-2deg); }
+  .site-header nav { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--text-secondary); }
+  .site-header nav a { padding: 8px 14px; border-radius: 999px; transition: color 0.2s ease, background 0.2s ease; }
+  .site-header nav a:hover { color: var(--text); background: rgba(var(--accent-rgb), 0.1); }
+  .site-header nav a.nav-cta {
+    background: var(--accent); color: #1a0e0c; margin-left: 6px;
+    box-shadow: 0 6px 16px -6px rgba(var(--accent-rgb), 0.55);
+  }
+  .site-header nav a.nav-cta:hover { background: var(--accent); opacity: 0.9; transform: translateY(-1px); }
+  @media (max-width: 620px) { .site-header nav a:not(.nav-cta) { display: none; } }
 
   /* hero */
   .hero { position: relative; overflow: hidden; padding: 40px 0 60px; }
@@ -216,6 +230,13 @@
   .rt-pulse { animation: pulse-node 2s ease-out infinite; }
   @keyframes pulse-node { 0% { opacity: 0.9; } 50% { opacity: 0.35; } 100% { opacity: 0.9; } }
   @media (prefers-reduced-motion: reduce) { .rt-pulse { animation: none; } }
+  .rt-avatar { transform-box: fill-box; transform-origin: center; transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1); cursor: pointer; }
+  .rt-avatar:hover { transform: scale(1.1); }
+  .rt-diagram svg circle[r="4.5"] { filter: drop-shadow(0 0 4px currentColor); }
+  @media (prefers-reduced-motion: reduce) {
+    .rt-diagram svg animateMotion { display: none; }
+    .rt-diagram svg circle[r="4.5"] { display: none; }
+  }
 
   @media (max-width: 800px) {
     .rt-panel { grid-template-columns: 1fr; padding: 36px 24px; }
@@ -317,7 +338,7 @@
     <nav aria-label="Primary">
       <a href="#realtime">Tech</a>
       <a href="#apps">Apps</a>
-      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -358,17 +379,58 @@
             <div class="rt-cap"><h3>Live presence</h3><p>Adda's live rooms track who's online and watching, in real time.</p></div>
           </div>
         </div>
-        <div class="rt-diagram" role="img" aria-label="Diagram of two players connected in real time through a Colyseus game server">
+        <div class="rt-diagram" role="img" aria-label="Animated diagram of two player avatars exchanging moves in real time through a Colyseus game server">
           <svg viewBox="0 0 400 260" fill="none">
-            <path d="M78 170 C120 120, 160 90, 190 76" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round"/>
-            <path d="M210 76 C240 90, 280 120, 322 170" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="avatarA" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c8cff"/>
+                <stop offset="100%" stop-color="#4d5bd6"/>
+              </linearGradient>
+              <linearGradient id="avatarB" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#e88cf0"/>
+                <stop offset="100%" stop-color="#b25bd6"/>
+              </linearGradient>
+            </defs>
+
+            <path id="pathA" d="M78 170 C120 120, 160 90, 190 76" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round"/>
+            <path id="pathB" d="M210 76 C240 90, 280 120, 322 170" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round"/>
+
+            <!-- packets traveling A -> server -> B and back, staggered for a live-traffic feel -->
+            <circle r="4.5" fill="#9ba7ff">
+              <animateMotion dur="1.6s" begin="0s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+                <mpath href="#pathA"/>
+              </animateMotion>
+            </circle>
+            <circle r="4.5" fill="var(--accent)">
+              <animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear">
+                <mpath href="#pathA"/>
+              </animateMotion>
+            </circle>
+            <circle r="4.5" fill="var(--accent)">
+              <animateMotion dur="1.6s" begin="0s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+                <mpath href="#pathB"/>
+              </animateMotion>
+            </circle>
+            <circle r="4.5" fill="#f0a8f5">
+              <animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear">
+                <mpath href="#pathB"/>
+              </animateMotion>
+            </circle>
+
             <circle cx="200" cy="62" r="30" fill="var(--accent)" opacity="0.16" class="rt-pulse"/>
             <circle cx="200" cy="62" r="22" fill="var(--accent)"/>
             <text x="200" y="67" text-anchor="middle" font-size="10" font-weight="700" fill="white" font-family="Plus Jakarta Sans, sans-serif">ROOM</text>
-            <circle cx="62" cy="182" r="24" fill="#2a2521" stroke="#4b453e" stroke-width="1.5"/>
-            <circle cx="338" cy="182" r="24" fill="#2a2521" stroke="#4b453e" stroke-width="1.5"/>
-            <text x="62" y="187" text-anchor="middle" font-size="16" fill="#f3efe9">&#128241;</text>
-            <text x="338" y="187" text-anchor="middle" font-size="16" fill="#f3efe9">&#128241;</text>
+
+            <circle cx="62" cy="182" r="26" fill="#2a2521" opacity="0.16" class="rt-pulse" style="animation-delay:0.8s"/>
+            <circle cx="62" cy="182" r="24" fill="url(#avatarA)" stroke="#4b453e" stroke-width="1.5" class="rt-avatar"/>
+            <circle cx="62" cy="175" r="7" fill="#f3efe9"/>
+            <path d="M49 197 a13 13 0 0 1 26 0 Z" fill="#f3efe9"/>
+
+            <circle cx="338" cy="182" r="26" fill="#2a2521" opacity="0.16" class="rt-pulse" style="animation-delay:1.6s"/>
+            <circle cx="338" cy="182" r="24" fill="url(#avatarB)" stroke="#4b453e" stroke-width="1.5" class="rt-avatar"/>
+            <circle cx="338" cy="175" r="7" fill="#f3efe9"/>
+            <path d="M325 197 a13 13 0 0 1 26 0 Z" fill="#f3efe9"/>
+
             <text x="62" y="222" text-anchor="middle" class="rt-node-label">Player A</text>
             <text x="338" y="222" text-anchor="middle" class="rt-node-label">Player B</text>
             <text x="200" y="30" text-anchor="middle" class="rt-node-label">Colyseus server</text>
