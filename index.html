@@ -370,67 +370,25 @@
       .rt-diagram {
         position: relative;
         z-index: 1;
-        height: 260px;
+        height: 300px;
       }
-      .rt-diagram svg {
+      .rt-diagram canvas {
         width: 100%;
         height: 100%;
+        display: block;
+        touch-action: none;
+        cursor: grab;
       }
-      .rt-node-label {
+      .rt-diagram canvas:active {
+        cursor: grabbing;
+      }
+      .rt-hint {
+        position: absolute;
+        left: 0;
+        bottom: -6px;
         font-size: 11px;
-        fill: #b8b0a7;
-        font-weight: 600;
-        font-family: "Plus Jakarta Sans", sans-serif;
-      }
-      .rt-flow {
-        stroke-dasharray: 6 7;
-        animation: dash 1.4s linear infinite;
-      }
-      @keyframes dash {
-        to {
-          stroke-dashoffset: -26;
-        }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .rt-flow {
-          animation: none;
-        }
-      }
-      .rt-pulse {
-        animation: pulse-node 2s ease-out infinite;
-      }
-      @keyframes pulse-node {
-        0% {
-          opacity: 0.9;
-        }
-        50% {
-          opacity: 0.35;
-        }
-        100% {
-          opacity: 0.9;
-        }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .rt-pulse {
-          animation: none;
-        }
-      }
-      .rt-avatar {
-        transform-box: fill-box;
-        transform-origin: center;
-        transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
-        cursor: pointer;
-      }
-      .rt-avatar:hover {
-        transform: scale(1.1);
-      }
-      .rt-ripple {
-        pointer-events: none;
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .rt-ripple {
-          display: none;
-        }
+        color: #746c65;
+        margin: 0;
       }
 
       @media (max-width: 800px) {
@@ -776,8 +734,8 @@
               <p class="d">We built our own real-time social multiplayer SDK &mdash; the same engine runs every board in 16 Guti and every live room in Adda. State sync, matchmaking, presence, and reconnects come built in, so every new app starts already live.</p>
               <div class="rt-caps">
                 <div class="rt-cap">
-                  <h3>Live state sync</h3>
-                  <p>Every board update reaches every player in the room instantly.</p>
+                  <h3>Server authoritative</h3>
+                  <p>server authoritative gameplay logic ensures fairness and consistency across all clients.</p>
                 </div>
                 <div class="rt-cap">
                   <h3>Queue based matchmaking</h3>
@@ -788,84 +746,15 @@
                   <p>Lose signal mid-match and rejoin exactly where you left off.</p>
                 </div>
                 <div class="rt-cap">
-                  <h3>Live presence</h3>
-                  <p>Adda's live rooms track who's online and watching, in real time.</p>
+                  <h3>Live streaming</h3>
+                  <p>Live live games constantly even with low internet</p>
                 </div>
               </div>
               <!-- <p class="rt-powered">Powered by Colyseus, Socket.io, PlayFab, TypeScript, Railway, PostgreSQL &amp; Firebase.</p> -->
             </div>
-            <div class="rt-diagram" role="img" aria-label="Animated diagram of four player avatars exchanging moves in real time through a Colyseus game server">
-              <svg viewBox="0 0 440 300" fill="none">
-                <defs>
-                  <linearGradient id="avatarA" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#7c8cff" />
-                    <stop offset="100%" stop-color="#4d5bd6" />
-                  </linearGradient>
-                  <linearGradient id="avatarB" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#e88cf0" />
-                    <stop offset="100%" stop-color="#b25bd6" />
-                  </linearGradient>
-                  <linearGradient id="avatarC" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#5be0c2" />
-                    <stop offset="100%" stop-color="#2aa88e" />
-                  </linearGradient>
-                  <linearGradient id="avatarD" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#ffc86b" />
-                    <stop offset="100%" stop-color="#e0983c" />
-                  </linearGradient>
-                </defs>
-
-                <path id="pathA" d="M220 88 L220 122" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round" />
-                <path id="pathB" d="M332 150 L248 150" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round" />
-                <path id="pathC" d="M220 212 L220 178" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round" />
-                <path id="pathD" d="M108 150 L192 150" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round" />
-
-                <!-- broadcast ripples: the room pushing a synced state update out to every player at once -->
-                <circle cx="220" cy="150" r="26" fill="none" stroke="var(--accent)" stroke-width="2" class="rt-ripple">
-                  <animate attributeName="r" values="26;150" dur="2.4s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
-                  <animate attributeName="opacity" values="0.55;0" dur="2.4s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
-                  <animate attributeName="stroke-width" values="2;0.5" dur="2.4s" begin="0s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="220" cy="150" r="26" fill="none" stroke="var(--accent)" stroke-width="2" class="rt-ripple">
-                  <animate attributeName="r" values="26;150" dur="2.4s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
-                  <animate attributeName="opacity" values="0.55;0" dur="2.4s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
-                  <animate attributeName="stroke-width" values="2;0.5" dur="2.4s" begin="0.8s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="220" cy="150" r="26" fill="none" stroke="var(--accent)" stroke-width="2" class="rt-ripple">
-                  <animate attributeName="r" values="26;150" dur="2.4s" begin="1.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
-                  <animate attributeName="opacity" values="0.55;0" dur="2.4s" begin="1.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
-                  <animate attributeName="stroke-width" values="2;0.5" dur="2.4s" begin="1.6s" repeatCount="indefinite" />
-                </circle>
-
-                <circle cx="220" cy="150" r="34" fill="var(--accent)" opacity="0.16" class="rt-pulse" />
-                <circle cx="220" cy="150" r="26" fill="var(--accent)" />
-                <text x="220" y="155" text-anchor="middle" font-size="10" font-weight="700" fill="white" font-family="Plus Jakarta Sans, sans-serif">ROOM</text>
-                <text x="268" y="112" class="rt-node-label">Colyseus server</text>
-
-                <circle cx="220" cy="64" r="24" fill="#2a2521" opacity="0.16" class="rt-pulse" style="animation-delay: 0.2s" />
-                <circle cx="220" cy="64" r="22" fill="url(#avatarA)" stroke="#4b453e" stroke-width="1.5" class="rt-avatar" />
-                <circle cx="220" cy="57" r="6.5" fill="#f3efe9" />
-                <path d="M208 84 a12 12 0 0 1 24 0 Z" fill="#f3efe9" />
-                <text x="220" y="32" text-anchor="middle" class="rt-node-label">Player A</text>
-
-                <circle cx="356" cy="150" r="24" fill="#2a2521" opacity="0.16" class="rt-pulse" style="animation-delay: 0.6s" />
-                <circle cx="356" cy="150" r="22" fill="url(#avatarB)" stroke="#4b453e" stroke-width="1.5" class="rt-avatar" />
-                <circle cx="356" cy="143" r="6.5" fill="#f3efe9" />
-                <path d="M344 170 a12 12 0 0 1 24 0 Z" fill="#f3efe9" />
-                <text x="356" y="188" text-anchor="middle" class="rt-node-label">Player B</text>
-
-                <circle cx="220" cy="236" r="24" fill="#2a2521" opacity="0.16" class="rt-pulse" style="animation-delay: 1s" />
-                <circle cx="220" cy="236" r="22" fill="url(#avatarC)" stroke="#4b453e" stroke-width="1.5" class="rt-avatar" />
-                <circle cx="220" cy="229" r="6.5" fill="#f3efe9" />
-                <path d="M208 256 a12 12 0 0 1 24 0 Z" fill="#f3efe9" />
-                <text x="220" y="274" text-anchor="middle" class="rt-node-label">Player C</text>
-
-                <circle cx="84" cy="150" r="24" fill="#2a2521" opacity="0.16" class="rt-pulse" style="animation-delay: 1.4s" />
-                <circle cx="84" cy="150" r="22" fill="url(#avatarD)" stroke="#4b453e" stroke-width="1.5" class="rt-avatar" />
-                <circle cx="84" cy="143" r="6.5" fill="#f3efe9" />
-                <path d="M72 170 a12 12 0 0 1 24 0 Z" fill="#f3efe9" />
-                <text x="84" y="188" text-anchor="middle" class="rt-node-label">Player D</text>
-              </svg>
+            <div class="rt-diagram" role="img" aria-label="Interactive diagram of four player avatars connected in real time through a Colyseus game server. Drag a player, or click the room, to trigger a live sync.">
+              <canvas id="rt-canvas" resize="true"></canvas>
+              <!-- <p class="rt-hint">Drag a player, or click the room</p> -->
             </div>
           </div>
         </div>
@@ -1098,6 +987,249 @@
             fallbackCopy();
           }
         });
+      })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/paper@0.12.17/dist/paper-full.min.js" defer></script>
+    <script>
+      (function () {
+        var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        function boot() {
+          var canvas = document.getElementById("rt-canvas");
+          if (!canvas || typeof paper === "undefined") return;
+          paper.setup(canvas);
+
+          var rootStyle = getComputedStyle(document.documentElement);
+          var accent = rootStyle.getPropertyValue("--accent").trim() || "#ff5b52";
+          var wire = "#4b453e";
+          var ink = "#f3efe9";
+
+          var players = [
+            { key: "A", label: "Player A", from: "#7c8cff", to: "#4d5bd6", ax: 0.5, ay: 0.22 },
+            { key: "B", label: "Player B", from: "#e88cf0", to: "#b25bd6", ax: 0.82, ay: 0.5 },
+            { key: "C", label: "Player C", from: "#5be0c2", to: "#2aa88e", ax: 0.5, ay: 0.8 },
+            { key: "D", label: "Player D", from: "#ffc86b", to: "#e0983c", ax: 0.18, ay: 0.5 },
+          ];
+
+          var room,
+            wires = [],
+            ripples = [];
+          var t = 0;
+
+          function layout() {
+            var b = paper.view.bounds;
+            var cx = b.width / 2 + b.x;
+            var cy = b.height / 2 + b.y;
+            var rx = Math.min(b.width, b.height) * 0.42;
+
+            if (!room) {
+              room = new paper.Group();
+              var roomGlow = new paper.Path.Circle({ center: [cx, cy], radius: 34, fillColor: accent });
+              roomGlow.opacity = 0.16;
+              roomGlow.data.isGlow = true;
+              var roomCore = new paper.Path.Circle({ center: [cx, cy], radius: 26, fillColor: accent });
+              var roomText = new paper.PointText({
+                point: [cx, cy + 4],
+                content: "ROOM",
+                justification: "center",
+                fillColor: "#ffffff",
+                fontFamily: "Plus Jakarta Sans, sans-serif",
+                fontWeight: "700",
+                fontSize: 10,
+              });
+              room.addChildren([roomGlow, roomCore, roomText]);
+              room.data.base = new paper.Point(cx, cy);
+              room.data.core = roomCore;
+              room.data.glow = roomGlow;
+              room.data.text = roomText;
+              room.onClick = function () {
+                broadcast();
+              };
+              room.onMouseEnter = function () {
+                document.body.style.cursor = "pointer";
+              };
+              room.onMouseLeave = function () {
+                document.body.style.cursor = "";
+              };
+            } else {
+              room.data.base = new paper.Point(cx, cy);
+            }
+
+            players.forEach(function (p, i) {
+              var home = new paper.Point(b.x + b.width * p.ax, b.y + b.height * p.ay);
+              if (!p.group) {
+                var gradient = new paper.Color({
+                  gradient: { stops: [p.from, p.to], radial: true },
+                  origin: home,
+                  destination: home.add([20, 20]),
+                });
+                var glow = new paper.Path.Circle({ center: home, radius: 24, fillColor: "#2a2521" });
+                glow.opacity = 0.16;
+                var avatar = new paper.Path.Circle({ center: home, radius: 22, fillColor: gradient, strokeColor: wire, strokeWidth: 1.5 });
+                var head = new paper.Path.Circle({ center: home.add([0, -7]), radius: 6.5, fillColor: ink });
+                var body = new paper.Path({ fillColor: ink });
+                body.moveTo(home.add([-12, 20]));
+                body.arcTo(home.add([0, 8]), home.add([12, 20]));
+                body.closePath();
+                var label = new paper.PointText({
+                  point: home.add([0, 40]),
+                  content: p.label,
+                  justification: "center",
+                  fillColor: "#b8b0a7",
+                  fontFamily: "Plus Jakarta Sans, sans-serif",
+                  fontWeight: "600",
+                  fontSize: 11,
+                });
+                var group = new paper.Group([glow, avatar, head, body, label]);
+                group.data = { home: home, pos: home.clone(), phase: Math.random() * Math.PI * 2, dragging: false, glow: glow, avatar: avatar, head: head, body: body, label: label, key: p.key };
+
+                avatar.onMouseEnter = function () {
+                  group.data.hover = true;
+                  document.body.style.cursor = "grab";
+                };
+                avatar.onMouseLeave = function () {
+                  group.data.hover = false;
+                  document.body.style.cursor = "";
+                };
+                avatar.onMouseDown = function () {
+                  group.data.dragging = true;
+                  document.body.style.cursor = "grabbing";
+                };
+
+                p.group = group;
+                p.home = home;
+              } else {
+                p.group.data.home = home;
+                p.home = home;
+              }
+            });
+
+            wires.forEach(function (w) {
+              w.remove();
+            });
+            wires = players.map(function (p, i) {
+              var line = new paper.Path({ strokeColor: wire, strokeWidth: 2, dashArray: [6, 7] });
+              line.add(room.data.base, room.data.base, p.group.data.pos);
+              line.data.bend = i % 2 === 0 ? 1 : -1;
+              line.sendToBack();
+              return line;
+            });
+          }
+
+          function curveWire(line, from, to, bend) {
+            var dir = to.subtract(from);
+            var mid = from.add(to).divide(2);
+            var perp = new paper.Point(-dir.y, dir.x);
+            if (perp.length > 0) perp = perp.normalize();
+            var control = mid.add(perp.multiply(dir.length * 0.18 * bend));
+            line.segments[0].point = from;
+            line.segments[1].point = control;
+            line.segments[2].point = to;
+            line.smooth({ type: "continuous" });
+          }
+
+          function broadcast() {
+            if (reduceMotion) return;
+            ripples.push({ r: 26, o: 0.55 });
+            var glow = room.data.glow;
+            glow.tween({ opacity: 0.35 }, { duration: 120 }).then(function () {
+              glow.tween({ opacity: 0.16 }, { duration: 260 });
+            });
+          }
+
+          paper.view.onResize = layout;
+          layout();
+          if (!reduceMotion) {
+            window.setInterval(broadcast, 3200);
+          }
+
+          paper.view.onFrame = function (event) {
+            t = event.time;
+
+            players.forEach(function (p) {
+              var d = p.group.data;
+              if (!d.dragging) {
+                var bob = reduceMotion ? new paper.Point(0, 0) : new paper.Point(0, Math.sin(t * 1.3 + d.phase) * 6);
+                var wander = d.home.add(bob);
+                d.pos = d.pos.add(wander.subtract(d.pos).multiply(0.08));
+              }
+              var scale = d.hover || d.dragging ? 1.12 : 1;
+              p.group.position = d.pos;
+              if (d._scale !== scale) {
+                var factor = scale / (d._appliedScale || 1);
+                p.group.scale(factor, d.pos);
+                d._appliedScale = scale;
+                d._scale = scale;
+              }
+            });
+
+            wires.forEach(function (line, i) {
+              curveWire(line, room.data.base, players[i].group.data.pos, line.data.bend);
+            });
+
+            room.data.core.position = room.data.base;
+            room.data.glow.position = room.data.base;
+            room.data.text.point = room.data.base.add([0, 4]);
+
+            for (var i = ripples.length - 1; i >= 0; i--) {
+              var r = ripples[i];
+              r.r += (150 - 26) / 60;
+              r.o -= 0.55 / 60;
+              if (r.o <= 0) {
+                ripples.splice(i, 1);
+              }
+            }
+            if (room && room.data.ripplePaths) {
+              room.data.ripplePaths.forEach(function (rp) {
+                rp.remove();
+              });
+            }
+            room.data.ripplePaths = ripples.map(function (r) {
+              var c = new paper.Path.Circle({ center: room.data.base, radius: r.r, strokeColor: accent, strokeWidth: Math.max(0.5, 2 - (r.r - 26) / 90) });
+              c.opacity = Math.max(0, r.o);
+              c.sendToBack();
+              c.data.isRipple = true;
+              return c;
+            });
+          };
+
+          function findGroupAt(point) {
+            for (var i = 0; i < players.length; i++) {
+              if (players[i].group.data.avatar.contains(point) || point.getDistance(players[i].group.data.pos) < 24) {
+                return players[i].group;
+              }
+            }
+            return null;
+          }
+
+          canvas.addEventListener("pointerup", function () {
+            players.forEach(function (p) {
+              p.group.data.dragging = false;
+            });
+            document.body.style.cursor = "";
+          });
+          canvas.addEventListener("pointerleave", function () {
+            players.forEach(function (p) {
+              p.group.data.dragging = false;
+            });
+          });
+
+          var tool = new paper.Tool();
+          tool.onMouseDrag = function (event) {
+            players.forEach(function (p) {
+              if (p.group.data.dragging) {
+                p.group.data.pos = event.point;
+              }
+            });
+          };
+        }
+
+        if (document.readyState === "complete") {
+          boot();
+        } else {
+          window.addEventListener("load", boot);
+        }
       })();
     </script>
   </body>
