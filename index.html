@@ -424,14 +424,11 @@
       .rt-avatar:hover {
         transform: scale(1.1);
       }
-      .rt-diagram svg circle[r="4.5"] {
-        filter: drop-shadow(0 0 4px currentColor);
+      .rt-ripple {
+        pointer-events: none;
       }
       @media (prefers-reduced-motion: reduce) {
-        .rt-diagram svg animateMotion {
-          display: none;
-        }
-        .rt-diagram svg circle[r="4.5"] {
+        .rt-ripple {
           display: none;
         }
       }
@@ -823,26 +820,21 @@
                 <path id="pathC" d="M220 212 L220 178" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round" />
                 <path id="pathD" d="M108 150 L192 150" stroke="#4b453e" stroke-width="2" class="rt-flow" stroke-linecap="round" />
 
-                <!-- packets: every player pushing a move to the shared room, staggered for a live-traffic feel -->
-                <circle r="4.5" fill="#9ba7ff">
-                  <animateMotion dur="1.3s" begin="0s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
-                    <mpath href="#pathA" />
-                  </animateMotion>
+                <!-- broadcast ripples: the room pushing a synced state update out to every player at once -->
+                <circle cx="220" cy="150" r="26" fill="none" stroke="var(--accent)" stroke-width="2" class="rt-ripple">
+                  <animate attributeName="r" values="26;150" dur="2.4s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
+                  <animate attributeName="opacity" values="0.55;0" dur="2.4s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
+                  <animate attributeName="stroke-width" values="2;0.5" dur="2.4s" begin="0s" repeatCount="indefinite" />
                 </circle>
-                <circle r="4.5" fill="#f0a8f5">
-                  <animateMotion dur="1.3s" begin="0.4s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
-                    <mpath href="#pathB" />
-                  </animateMotion>
+                <circle cx="220" cy="150" r="26" fill="none" stroke="var(--accent)" stroke-width="2" class="rt-ripple">
+                  <animate attributeName="r" values="26;150" dur="2.4s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
+                  <animate attributeName="opacity" values="0.55;0" dur="2.4s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
+                  <animate attributeName="stroke-width" values="2;0.5" dur="2.4s" begin="0.8s" repeatCount="indefinite" />
                 </circle>
-                <circle r="4.5" fill="#7fe8cf">
-                  <animateMotion dur="1.3s" begin="0.8s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
-                    <mpath href="#pathC" />
-                  </animateMotion>
-                </circle>
-                <circle r="4.5" fill="#ffd58c">
-                  <animateMotion dur="1.3s" begin="1.2s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
-                    <mpath href="#pathD" />
-                  </animateMotion>
+                <circle cx="220" cy="150" r="26" fill="none" stroke="var(--accent)" stroke-width="2" class="rt-ripple">
+                  <animate attributeName="r" values="26;150" dur="2.4s" begin="1.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
+                  <animate attributeName="opacity" values="0.55;0" dur="2.4s" begin="1.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.6 0.4 1" />
+                  <animate attributeName="stroke-width" values="2;0.5" dur="2.4s" begin="1.6s" repeatCount="indefinite" />
                 </circle>
 
                 <circle cx="220" cy="150" r="34" fill="var(--accent)" opacity="0.16" class="rt-pulse" />
