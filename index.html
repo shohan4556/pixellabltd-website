@@ -345,28 +345,10 @@
         margin: 0 0 26px;
         max-width: 42ch;
       }
-      .rt-stack {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 9px;
-        margin-bottom: 28px;
-      }
-      .rt-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 7px;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        color: #f3efe9;
-        font-size: 12.5px;
-        font-weight: 600;
-        padding: 7px 12px;
-        border-radius: 999px;
-      }
-      .rt-badge .dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
+      .rt-powered {
+        font-size: 12px;
+        color: #746c65;
+        margin: 22px 0 0;
       }
       .rt-caps {
         display: grid;
@@ -792,22 +774,13 @@
         <div class="wrap">
           <div class="rt-panel">
             <div class="rt-copy">
-              <p class="kicker">Under the hood</p>
-              <h2 id="realtime-heading">Built for real-time, not bolted on.</h2>
-              <p class="d">Every move in 16 Guti and every live room in Adda runs over the same real-time backend &mdash; state sync, matchmaking, and reconnects are core infrastructure, not an afterthought.</p>
-              <ul class="rt-stack" aria-label="Technology stack">
-                <li class="rt-badge"><span class="dot" style="background: #7c8cff"></span>Colyseus</li>
-                <li class="rt-badge"><span class="dot" style="background: #ffffff"></span>Socket.io</li>
-                <li class="rt-badge"><span class="dot" style="background: #2f80ff"></span>PlayFab</li>
-                <li class="rt-badge"><span class="dot" style="background: #3b82f6"></span>TypeScript</li>
-                <li class="rt-badge"><span class="dot" style="background: #c084fc"></span>Railway</li>
-                <li class="rt-badge"><span class="dot" style="background: #6ba9ff"></span>PostgreSQL</li>
-                <li class="rt-badge"><span class="dot" style="background: #f2a53c"></span>Firebase</li>
-              </ul>
+              <p class="kicker">Our platform</p>
+              <h2 id="realtime-heading">One real-time social multiplayer SDK. Every app we ship.</h2>
+              <p class="d">We built our own real-time social multiplayer SDK &mdash; the same engine runs every board in 16 Guti and every live room in Adda. State sync, matchmaking, presence, and reconnects come built in, so every new app starts already live.</p>
               <div class="rt-caps">
                 <div class="rt-cap">
                   <h3>Live state sync</h3>
-                  <p>Every board update reaches every player in the room instantly via Colyseus.</p>
+                  <p>Every board update reaches every player in the room instantly.</p>
                 </div>
                 <div class="rt-cap">
                   <h3>Matchmaking &amp; rooms</h3>
@@ -822,6 +795,7 @@
                   <p>Adda's live rooms track who's online and watching, in real time.</p>
                 </div>
               </div>
+              <!-- <p class="rt-powered">Powered by Colyseus, Socket.io, PlayFab, TypeScript, Railway, PostgreSQL &amp; Firebase.</p> -->
             </div>
             <div class="rt-diagram" role="img" aria-label="Animated diagram of four player avatars exchanging moves in real time through a Colyseus game server">
               <svg viewBox="0 0 440 300" fill="none">
