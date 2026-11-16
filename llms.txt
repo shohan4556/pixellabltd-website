@@ -8,6 +8,15 @@
 - [16 Guti: Sholo Guti Pro](https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro): Premium Sholo Guti with four game modes, VIP rooms and ranked play. Android, 100K+ downloads, rated 4.1.
 - [Adda — Live Stream & Chat](https://play.google.com/store/apps/details?id=com.pixellab.adda.live): Social app to discover creators, go live and browse verified talent. Android, rated 12+.
 
+## In development
+
+These projects are planned or in development and not yet released:
+
+- Ludo: Real-time online multiplayer Ludo, built on the same SDK as 16 Guti.
+- Parchesi: Real-time online multiplayer Parchís / Parcheesi.
+- Adda Live Gaming: Live social gaming rooms inside Adda, where people voice chat, hang out and play casual party games together in real time.
+- Droid Harness: AI-driven Android automation tool that lets AI agents operate Android apps and devices for testing and repetitive tasks.
+
 ## Technology
 
 PixelLab's in-house real-time social multiplayer SDK powers every board in 16 Guti and every live room in Adda:
