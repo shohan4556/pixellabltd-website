@@ -1,6 +1,6 @@
 # PixelLab Ltd.
 
-> PixelLab Ltd. is a game studio in Dhaka, Bangladesh. It builds real-time multiplayer Bengali board games (16 Guti, Sholo Guti Pro) and Adda, a live streaming and social app, all running on its own real-time social multiplayer SDK.
+> PixelLab Ltd. is a studio in Dhaka, Bangladesh that specialises in real-time apps, games and networking. It builds real-time multiplayer Bengali board games (16 Guti, Sholo Guti Pro) and Adda, a live streaming and social app, all running on its own real-time social multiplayer SDK.
 
 ## Products
 
