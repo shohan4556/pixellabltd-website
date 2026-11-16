@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.pixellabltd.com/sitemap.xml
+Sitemap: https://pixellabltd.com/sitemap.xml
