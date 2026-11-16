@@ -26,8 +26,6 @@ PixelLab's in-house real-time social multiplayer SDK powers every board in 16 Gu
 - Reconnect and resync mid-match
 - Live streaming that holds up on weak connections
 
-Stack: Colyseus, Socket.io, PlayFab, TypeScript, Railway, PostgreSQL, Firebase.
-
 ## Company
 
 - Founded: 2024 by Shohanur Rahaman (https://www.linkedin.com/in/shohanr/)
