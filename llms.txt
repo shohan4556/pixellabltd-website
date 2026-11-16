@@ -1,0 +1,32 @@
+# PixelLab Ltd.
+
+> PixelLab Ltd. is a game studio in Dhaka, Bangladesh. It builds real-time multiplayer Bengali board games (16 Guti, Sholo Guti Pro) and Adda, a live streaming and social app, all running on its own real-time social multiplayer SDK.
+
+## Products
+
+- [16 Guti Game](https://play.google.com/store/apps/details?id=com.pixellab.bead.online.board.game): The classic Bengali strategy board game (16 beads, two sides). Play online against real opponents or offline against a bot. Android, 10K+ downloads, rated 4.7.
+- [16 Guti: Sholo Guti Pro](https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro): Premium Sholo Guti with four game modes, VIP rooms and ranked play. Android, 100K+ downloads, rated 4.1.
+- [Adda — Live Stream & Chat](https://play.google.com/store/apps/details?id=com.pixellab.adda.live): Social app to discover creators, go live and browse verified talent. Android, rated 12+.
+
+## Technology
+
+PixelLab's in-house real-time social multiplayer SDK powers every board in 16 Guti and every live room in Adda:
+
+- Server-authoritative game logic (every action validated on the server)
+- Queue-based matchmaking into synced rooms
+- Reconnect and resync mid-match
+- Live streaming that holds up on weak connections
+
+Stack: Colyseus, Socket.io, PlayFab, TypeScript, Railway, PostgreSQL, Firebase.
+
+## Company
+
+- Location: Pallabi, Eastern Housing, Dhaka, Bangladesh
+- Contact: shohan@pixellabltd.com (app support, collaboration, press)
+- Google Play developer page: https://play.google.com/store/apps/developer?id=PixelLab+Ltd
+
+## Pages
+
+- [Home](https://pixellabltd.com/)
+- [Privacy Policy](https://pixellabltd.com/privacy.html)
+- [Child Safety Standards](https://pixellabltd.com/child-safety.html)
