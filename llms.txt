@@ -4,7 +4,7 @@
 
 ## Products
 
-- [16 Guti Game](https://play.google.com/store/apps/details?id=com.pixellab.bead.online.board.game): The classic Bengali strategy board game (16 beads, two sides). Play online against real opponents or offline against a bot. Android, 10K+ downloads, rated 4.7.
+- [16 Guti Game](https://play.google.com/store/apps/details?id=com.pixellab.bead.online.board.game): The classic Bengali strategy board game (16 beads, two sides). Play online against real opponents or offline against a bot. Android, 100K+ downloads, rated 4.7.
 - [16 Guti: Sholo Guti Pro](https://play.google.com/store/apps/details?id=com.pixellab.shologuti.offline.bead16.damro): Premium Sholo Guti with four game modes, VIP rooms and ranked play. Android, 100K+ downloads, rated 4.1.
 - [Adda — Live Stream & Chat](https://play.google.com/store/apps/details?id=com.pixellab.adda.live): Social app to discover creators, go live and browse verified talent. Android, rated 12+.
 
