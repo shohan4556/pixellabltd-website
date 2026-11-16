@@ -245,6 +245,15 @@ img {
   border-radius: 16px;
   padding: 20px;
 }
+.section a.card {
+  color: var(--text);
+  font-weight: inherit;
+  transition: border-color 0.2s ease;
+}
+.section a.card:hover {
+  text-decoration: none;
+  border-color: rgba(var(--accent-rgb), 0.4);
+}
 .card h3 {
   margin: 0 0 6px;
   font-size: 15.5px;
