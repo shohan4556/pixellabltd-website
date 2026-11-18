@@ -39,5 +39,6 @@ PixelLab's in-house real-time social multiplayer SDK powers every board in 16 Gu
 - [Home](https://pixellabltd.com/)
 - [About](https://pixellabltd.com/about/)
 - [FAQ](https://pixellabltd.com/faq/)
+- [Founder Resources](https://pixellabltd.com/resources/)
 - [Privacy Policy](https://pixellabltd.com/privacy.html)
 - [Child Safety Standards](https://pixellabltd.com/child-safety.html)
